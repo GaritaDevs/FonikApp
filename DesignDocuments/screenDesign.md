@@ -2,10 +2,6 @@
 
 <img alt= "homepage" src="./wireframes/homePage.png">
 
-## About
-
-<img alt= "about page" src="./wireframes/About.png">
-
 ## Add Vocabulary
 
 <img alt= "Add word to list" src="./wireframes/addWord.png">
