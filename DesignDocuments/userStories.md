@@ -27,19 +27,19 @@ The MVP includes the core features necessary for users to save German vocabulary
 - **US-11:** As a user, I want to reveal the English meaning or German word on a flashcard so that I can test my knowledge before seeing the answer.
 - **US-12:** As a user, I want to mark whether I answered a flashcard correctly or incorrectly so that I can identify vocabulary that needs more practice.
 
+### 5. External API Integration
+- **US-15:** As a user, I want to search for German words using a dictionary API so that I can find word meanings and grammatical information without entering everything manually.
+- **US-16:** As a user, I want to retrieve German noun articles and plural forms from an external service when available so that I can save vocabulary more efficiently.
 ---
 
 ## Future Improvements
 
 These features are outside the initial MVP but could be added in future iterations.
 
-### 5. Learning Progress
+### 6. Learning Progress
 - **US-13:** As a user, I want to track my flashcard performance so that I can monitor my learning progress over time.
 - **US-14:** As a user, I want to review words I frequently get wrong so that I can focus on areas where I need improvement.
 
-### 6. External API Integration
-- **US-15:** As a user, I want to search for German words using a dictionary API so that I can find word meanings and grammatical information without entering everything manually.
-- **US-16:** As a user, I want to retrieve German noun articles and plural forms from an external service when available so that I can save vocabulary more efficiently.
 
 ### 7. Additional Features
 - **US-17:** As a user, I want to filter my vocabulary by grammatical gender or case so that I can focus on specific grammar topics.
