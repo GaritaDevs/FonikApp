@@ -1,8 +1,9 @@
 ## Week 4
-- Date: 
-- Hours
+- Date: 10/02/2026
+- Hours: 2
 
-Text: 
+Text: I created the properties file for the log4 and the database, I configured the
+Tomcat and tested to make sure it was working. And I creates the database and the users table
 
 
 ## Week 5
