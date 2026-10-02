@@ -9,7 +9,7 @@ The goal is to make the learning process of the German language more organized, 
 ## Project Technologies/Techniques
 - Security/Authentication : AWS Cognito
 - Database : MySQL 8.x
-- ORM Framework : Hibernate Version TBD
+- ORM Framework : Hibernate Version 6.4.3.Final
 - Dependency Management : Maven
 - Web Services consumed using Java : TBD
 - CSS : Bootstrap 
