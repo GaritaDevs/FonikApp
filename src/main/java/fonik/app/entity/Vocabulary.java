@@ -1,6 +1,6 @@
 package fonik.app.entity;
 
-public class Vocubulary {
+public class Vocabulary {
 
     private int id;
     private String germanWord;
@@ -8,10 +8,10 @@ public class Vocubulary {
     private String article;
     private String plural;
 
-    public Vocubulary() {
+    public Vocabulary() {
     }
 
-    public Vocubulary(String germanWord, String englishMeaning, String article, String plural) {
+    public Vocabulary(String germanWord, String englishMeaning, String article, String plural) {
         this.germanWord = germanWord;
         this.englishMeaning = englishMeaning;
         this.article = article;

@@ -7,10 +7,12 @@ Tomcat and tested to make sure it was working. And I creates the database and th
 
 
 ## Week 5
-- Date:
-- Hours
+- Date: 10/04/2026
+- Hours: 1
 
-Text:
+Text: I added my getters, setters, constructors in my User and Vocabulary class. I added the dependency 5 of hibernate in my pom.xml
+and I created the SessionFactoryProvider class inside my persistence folder to use hibernate. I also created the hibernate.xml
+
 
 ## Week 6
 - Date:
