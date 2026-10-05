@@ -1,5 +1,8 @@
 package fonik.app.entity;
 
+import javax.persistence.*;
+
+
 public class User {
 
     private int id;
