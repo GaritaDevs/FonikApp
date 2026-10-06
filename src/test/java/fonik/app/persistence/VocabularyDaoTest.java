@@ -1,13 +1,12 @@
 package fonik.app.persistence;
 
 import fonik.app.entity.Vocabulary;
-import org.junit.Before;
-import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
-
-import java.util.List;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class VocabularyDaoTest {
 
@@ -24,16 +23,23 @@ public class VocabularyDaoTest {
 
     }
 
+//    @org.junit.jupiter.api.Test
+//    void insertSuccess() {
+//        userDao = new UserDao();
+//        User userToInsert = new User("Kia", "Yang", "kiYang2");
+//        int insertedUserId = userDao.insert(userToInsert);
+//        assertNotEquals(0, insertedUserId);
+//        User insertedUser = userDao.getById(insertedUserId);
+//        assertEquals("Kia", insertedUser.getFirstName());
+//
+//    }
+
     @Test
     public void insertSuccess() {
         vocabularyDao = new VocabularyDao();
 
-        Vocabulary vocabularyToInsert = new Vocabulary(
-                "Baum",
-                "tree",
-                "der",
-                "Bäume",
-                vocabularyDao.getById(1).getGermanWord()
+        Vocabulary vocabularyToInsert = new Vocabulary("Baum", "tree", "der", "Bäume",
+                vocabularyDao.getById(4).getUser()
         );
 
         int insertedVocabularyId = vocabularyDao.insert(vocabularyToInsert);
