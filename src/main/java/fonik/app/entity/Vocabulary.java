@@ -1,21 +1,63 @@
 package fonik.app.entity;
 
+import javax.persistence.*;
+
+/**
+ * A class to represent a German vocabulary entry.
+ */
+@Entity
+@Table(name = "vocabulary")
 public class Vocabulary {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(name = "german_word", nullable = false)
     private String germanWord;
+
+    @Column(name = "english_meaning", nullable = false)
     private String englishMeaning;
+
+    @Column(name = "article")
     private String article;
+
+    @Column(name = "plural")
     private String plural;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
+
+    /**
+     * Instantiates a new Vocabulary.
+     */
     public Vocabulary() {
     }
 
-    public Vocabulary(String germanWord, String englishMeaning, String article, String plural) {
+    /**
+     * Instantiates a new Vocabulary.
+     *
+     * @param germanWord German word
+     * @param englishMeaning English meaning
+     * @param article German article
+     * @param plural plural form
+     * @param user owner of vocabulary entry
+     */
+    public Vocabulary(String germanWord,
+                      String englishMeaning,
+                      String article,
+                      String plural,
+                      User user) {
+
         this.germanWord = germanWord;
         this.englishMeaning = englishMeaning;
         this.article = article;
         this.plural = plural;
+        this.user = user;
+    }
+
+    public Vocabulary(String baum, String tree, String der, String bäume, String germanWord) {
     }
 
     public int getId() {
@@ -58,9 +100,17 @@ public class Vocabulary {
         this.plural = plural;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     @Override
     public String toString() {
-        return "Vocubulary{" +
+        return "Vocabulary{" +
                 "id=" + id +
                 ", germanWord='" + germanWord + '\'' +
                 ", englishMeaning='" + englishMeaning + '\'' +
