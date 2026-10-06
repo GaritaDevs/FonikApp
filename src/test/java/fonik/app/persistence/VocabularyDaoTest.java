@@ -1,7 +1,9 @@
 package fonik.app.persistence;
 
 import fonik.app.entity.Vocabulary;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 import java.util.List;
 
@@ -10,6 +12,11 @@ import static org.junit.Assert.*;
 public class VocabularyDaoTest {
 
     VocabularyDao vocabularyDao;
+
+    @BeforeEach
+    public void setUp() {
+
+    }
 
     @Test
     public void getById() {
