@@ -64,7 +64,7 @@ public class VocabularyDaoTest {
     public void delete() {
         vocabularyDao = new VocabularyDao();
 
-        Vocabulary vocabulary = vocabularyDao.getById(2);
+        Vocabulary vocabulary = vocabularyDao.getById(3);
 
         vocabularyDao.delete(vocabulary);
 

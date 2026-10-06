@@ -44,6 +44,7 @@ public class Vocabulary {
      * @param plural plural form
      * @param user owner of vocabulary entry
      */
+
     public Vocabulary(String germanWord,
                       String englishMeaning,
                       String article,
