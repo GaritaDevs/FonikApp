@@ -2,7 +2,7 @@ package fonik.app.persistence;
 
 import fonik.app.entity.Vocabulary;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -42,7 +42,7 @@ public class VocabularyDaoTest {
     public void update() {
 
         vocabularyDao = new VocabularyDao();
-        Vocabulary vocabulary = vocabularyDao.getById(4);
+        Vocabulary vocabulary = vocabularyDao.getById(5);
         vocabulary.setEnglishMeaning("dog");
         vocabularyDao.update(vocabulary);
         Vocabulary updatedVocabulary = vocabularyDao.getById(5);
@@ -53,6 +53,11 @@ public class VocabularyDaoTest {
 
     @Test
     public void delete() {
+
+        vocabularyDao = new VocabularyDao();
+        Vocabulary vocabulary = vocabularyDao.getById(5);
+        vocabularyDao.delete(vocabulary);
+        assertNull(vocabularyDao.getById(5));
 
     }
 
