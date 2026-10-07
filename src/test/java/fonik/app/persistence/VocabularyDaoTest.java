@@ -1,6 +1,7 @@
 package fonik.app.persistence;
 
 import fonik.app.entity.Vocabulary;
+import fonik.app.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

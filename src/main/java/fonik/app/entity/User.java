@@ -160,12 +160,4 @@ public class User {
         this.id = id;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "username='" + username + '\'' +
-                ", id=" + id +
-                ", email='" + email + '\'' +
-                '}';
-    }
 }

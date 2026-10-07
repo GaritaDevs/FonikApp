@@ -109,14 +109,4 @@ public class Vocabulary {
         this.user = user;
     }
 
-    @Override
-    public String toString() {
-        return "Vocabulary{" +
-                "id=" + id +
-                ", germanWord='" + germanWord + '\'' +
-                ", englishMeaning='" + englishMeaning + '\'' +
-                ", article='" + article + '\'' +
-                ", plural='" + plural + '\'' +
-                '}';
-    }
 }

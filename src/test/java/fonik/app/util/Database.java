@@ -1,6 +1,4 @@
-package fonik.app.persistence;
-
-import fonik.app.util.PropertiesLoader; // 1. Import your interface
+package fonik.app.util;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
