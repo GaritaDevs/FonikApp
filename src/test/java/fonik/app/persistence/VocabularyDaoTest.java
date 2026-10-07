@@ -23,39 +23,31 @@ public class VocabularyDaoTest {
 
     }
 
-//    @org.junit.jupiter.api.Test
-//    void insertSuccess() {
-//        userDao = new UserDao();
-//        User userToInsert = new User("Kia", "Yang", "kiYang2");
-//        int insertedUserId = userDao.insert(userToInsert);
-//        assertNotEquals(0, insertedUserId);
-//        User insertedUser = userDao.getById(insertedUserId);
-//        assertEquals("Kia", insertedUser.getFirstName());
-//
-//    }
-
     @Test
     public void insertSuccess() {
         vocabularyDao = new VocabularyDao();
 
-        Vocabulary vocabularyToInsert = new Vocabulary("Baum", "tree", "der", "Bäume",
+        Vocabulary vocabularyToInsert = new Vocabulary(
+                "Baum", "tree", "der", "Bäume",
                 vocabularyDao.getById(4).getUser()
         );
 
         int insertedVocabularyId = vocabularyDao.insert(vocabularyToInsert);
-
         assertNotEquals(0, insertedVocabularyId);
-
-        Vocabulary insertedVocabulary =
-                vocabularyDao.getById(insertedVocabularyId);
-
+        Vocabulary insertedVocabulary = vocabularyDao.getById(insertedVocabularyId);
         assertEquals("Baum", insertedVocabulary.getGermanWord());
     }
-//
-//    @Test
-//    public void update() {
-//
-//    }
+
+    @Test
+    public void update() {
+
+        vocabularyDao = new VocabularyDao();
+        Vocabulary vocabulary = vocabularyDao.getById(4);
+        vocabulary.setEnglishMeaning("dog");
+        vocabularyDao.update(vocabulary);
+        Vocabulary updatedVocabulary = vocabularyDao.getById(5);
+        assertEquals("dog", updatedVocabulary.getEnglishMeaning());
+    }
 
 
 
