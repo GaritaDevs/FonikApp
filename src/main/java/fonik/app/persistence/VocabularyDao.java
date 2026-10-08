@@ -96,7 +96,7 @@ public class VocabularyDao {
 
         List<Vocabulary> vocabulary =
                 session.createQuery(query).getResultList();
-        logger.debug("The list of vocabulary entries: {}", vocabulary);
+        logger.debug("The list of vocabulary entriesssss: {}", vocabulary);
 
         session.close();
 

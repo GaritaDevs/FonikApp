@@ -25,15 +25,18 @@ public class VocabularyServlet extends HttpServlet {
         vocabularyDao = new VocabularyDao();
     }
 
+
+
     @Override
     protected void doGet(
             HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
+        logger.info("Vocabulary servlet was called");
 
         List<Vocabulary> vocabularyList = vocabularyDao.getAll();
 
-        logger.info("Vocabulary entries found: {}", vocabularyList.size());
+        logger.debug("Vocabulary entries found: {}", vocabularyList.size());
 
         request.setAttribute("vocabularyList", vocabularyList);
 

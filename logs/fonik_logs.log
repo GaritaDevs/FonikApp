@@ -1,0 +1,10 @@
+[DEBUG] 2026-10-08 18:01:41.163 [main] VocabularyDao - The list of vocabulary entriesssss: [fonik.app.entity.Vocabulary@9e33a6a, fonik.app.entity.Vocabulary@c497a55, fonik.app.entity.Vocabulary@7493d937]
+[ERROR] 2026-10-08 18:02:26.449 [http-nio-8080-exec-3] VocabularyServlet - VocabularyServlet doGet() was called
+[DEBUG] 2026-10-08 18:02:28.826 [http-nio-8080-exec-3] VocabularyDao - The list of vocabulary entriesssss: [fonik.app.entity.Vocabulary@3fe48a12, fonik.app.entity.Vocabulary@b3eba96, fonik.app.entity.Vocabulary@5d03d8f6]
+[ERROR] 2026-10-08 18:02:28.833 [http-nio-8080-exec-3] VocabularyServlet - Number of entries returned by DAO: 3
+[ERROR] 2026-10-08 18:02:28.844 [http-nio-8080-exec-3] VocabularyServlet - Request attribute set: [fonik.app.entity.Vocabulary@3fe48a12, fonik.app.entity.Vocabulary@b3eba96, fonik.app.entity.Vocabulary@5d03d8f6]
+[DEBUG] 2026-10-08 18:04:12.941 [main] VocabularyDao - The list of vocabulary entriesssss: [fonik.app.entity.Vocabulary@9e33a6a, fonik.app.entity.Vocabulary@c497a55, fonik.app.entity.Vocabulary@7493d937]
+[DEBUG] 2026-10-08 18:06:27.795 [main] VocabularyDao - The list of vocabulary entriesssss: [fonik.app.entity.Vocabulary@9e33a6a, fonik.app.entity.Vocabulary@c497a55, fonik.app.entity.Vocabulary@7493d937]
+[INFO ] 2026-10-08 18:07:09.692 [http-nio-8080-exec-3] VocabularyServlet - Vocabulary servlet was called
+[DEBUG] 2026-10-08 18:07:10.794 [http-nio-8080-exec-3] VocabularyDao - The list of vocabulary entriesssss: [fonik.app.entity.Vocabulary@495c98ec, fonik.app.entity.Vocabulary@3aafb984, fonik.app.entity.Vocabulary@5329036a]
+[DEBUG] 2026-10-08 18:07:10.805 [http-nio-8080-exec-3] VocabularyServlet - Vocabulary entries found: 3

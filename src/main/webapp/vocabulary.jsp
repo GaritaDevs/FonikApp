@@ -11,14 +11,16 @@
 
 <body>
 
+
 <h1>German Learning Tracker</h1>
 
 <h2>My Vocabulary</h2>
 
+<p>Vocabulary list: ${vocabularyList}</p>
+
 <p>
-    I have
-    <strong>${vocabularyList.size()}</strong>
-    vocabulary words.
+    Number of words:
+    <strong>${not empty vocabularyList ? vocabularyList.size() : 0}</strong>
 </p>
 
 <table border="1">
