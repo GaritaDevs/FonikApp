@@ -5,6 +5,8 @@ import fonik.app.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -64,7 +66,9 @@ public class VocabularyDaoTest {
 
     @Test
     public void getAll() {
-
+        vocabularyDao = new VocabularyDao();
+        List<Vocabulary> vocabulary = vocabularyDao.getAll();
+        assertEquals(3, vocabulary.size());
     }
 
     @Test
