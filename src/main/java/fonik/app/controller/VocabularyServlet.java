@@ -2,6 +2,8 @@ package fonik.app.controller;
 
 import fonik.app.entity.Vocabulary;
 import fonik.app.persistence.VocabularyDao;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,6 +18,7 @@ import java.util.List;
 public class VocabularyServlet extends HttpServlet {
 
     private VocabularyDao vocabularyDao;
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     public void init() throws ServletException {
@@ -29,6 +32,8 @@ public class VocabularyServlet extends HttpServlet {
             throws ServletException, IOException {
 
         List<Vocabulary> vocabularyList = vocabularyDao.getAll();
+
+        logger.info("Vocabulary entries found: {}", vocabularyList.size());
 
         request.setAttribute("vocabularyList", vocabularyList);
 
