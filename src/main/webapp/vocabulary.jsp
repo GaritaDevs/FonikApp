@@ -14,6 +14,8 @@
 
 <h1>German Learning Tracker</h1>
 
+<h2>Users</h2>
+
 <h2>My Vocabulary</h2>
 
 <p>Vocabulary list: ${vocabularyList}</p>
@@ -35,6 +37,7 @@
     </thead>
 
     <tbody>
+
 
     <c:forEach var="vocabulary" items="${vocabularyList}">
 
