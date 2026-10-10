@@ -55,24 +55,18 @@ public class UserDaoTest {
     public void getAll() {
 
         userDao = new UserDao();
-
         List<User> users = userDao.getAll();
-
         assertEquals(1, users.size());
     }
 
-//    @Test
-//    public void delete() {
-//
-//        userDao = new UserDao();
-//
-//        User user = userDao.getById(3);
-//
-//        assertNotNull(user);
-//
-//        userDao.delete(user);
-//
-//        assertNull(userDao.getById(3));
-//    }
+    @Test
+    public void delete() {
+
+        userDao = new UserDao();
+        User user = userDao.getById(3);
+        assertNotNull(user);
+        userDao.delete(user);
+        assertNull(userDao.getById(3));
+    }
 }
 

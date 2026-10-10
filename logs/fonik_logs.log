@@ -89,3 +89,7 @@
 [DEBUG] 2026-10-10 12:42:17.351 [main] UserDao - Added user with ID: 2
 [DEBUG] 2026-10-10 12:42:17.845 [main] UserDao - Retrieved 1 users
 [DEBUG] 2026-10-10 12:46:02.094 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-10 12:51:10.190 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@49b89425, fonik.app.entity.Vocabulary@59328218, fonik.app.entity.Vocabulary@5345dfe8]
+[DEBUG] 2026-10-10 12:52:05.988 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@4c24f3a2, fonik.app.entity.Vocabulary@783b3aa0, fonik.app.entity.Vocabulary@2ec85a25]
+[DEBUG] 2026-10-10 12:57:03.168 [main] VocabularyDao - Searching for vocabulary with german_word = Haus
+[DEBUG] 2026-10-10 12:58:37.356 [main] VocabularyDao - Searching for vocabulary with germanWord = Haus
