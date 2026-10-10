@@ -92,9 +92,9 @@ public class VocabularyDaoTest {
 
     @Test
     void getByPropertyLike() {
-        userDao = new UserDao();
-        List<User> users = userDao.getByPropertyLike("lastName", "c");
-        assertEquals(3, users.size());
+        vocabularyDao = new VocabularyDao();
+        List<Vocabulary> vocabularies = vocabularyDao.getByPropertyLike("germanWord", "H");
+        assertEquals(2, vocabularies.size());
     }
 
 }

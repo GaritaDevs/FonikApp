@@ -93,3 +93,17 @@
 [DEBUG] 2026-10-10 12:52:05.988 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@4c24f3a2, fonik.app.entity.Vocabulary@783b3aa0, fonik.app.entity.Vocabulary@2ec85a25]
 [DEBUG] 2026-10-10 12:57:03.168 [main] VocabularyDao - Searching for vocabulary with german_word = Haus
 [DEBUG] 2026-10-10 12:58:37.356 [main] VocabularyDao - Searching for vocabulary with germanWord = Haus
+[DEBUG] 2026-10-10 13:03:27.948 [main] VocabularyDao - Searching for vocabulary with germanWord like H
+[DEBUG] 2026-10-10 13:03:59.726 [main] VocabularyDao - Searching for vocabulary with germanWord like H
+[DEBUG] 2026-10-10 13:04:22.477 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@f559c74, fonik.app.entity.Vocabulary@63917fe1, fonik.app.entity.Vocabulary@720f56e2]
+[DEBUG] 2026-10-10 13:04:23.200 [main] VocabularyDao - Searching for vocabulary with germanWord like H
+[DEBUG] 2026-10-10 13:04:23.780 [main] VocabularyDao - Searching for vocabulary with germanWord = Haus
+[DEBUG] 2026-10-10 13:06:04.783 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-10 13:06:06.506 [main] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-10 13:07:11.081 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-10 13:07:11.540 [main] UserDao - Deleted user with ID: 1
+[DEBUG] 2026-10-10 13:07:12.073 [main] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-10 13:09:15.277 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-10 13:10:01.602 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-10 13:10:01.959 [main] UserDao - Deleted user with ID: 1
+[DEBUG] 2026-10-10 13:10:02.423 [main] UserDao - Retrieved 1 users

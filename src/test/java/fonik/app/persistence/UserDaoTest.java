@@ -63,10 +63,10 @@ public class UserDaoTest {
     public void delete() {
 
         userDao = new UserDao();
-        User user = userDao.getById(3);
+        User user = userDao.getById(1);
         assertNotNull(user);
         userDao.delete(user);
-        assertNull(userDao.getById(3));
+        assertNull(userDao.getById(1));
     }
 }
 
