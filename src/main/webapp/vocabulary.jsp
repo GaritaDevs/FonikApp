@@ -36,6 +36,7 @@
 
     <thead>
     <tr>
+        <th>Owner</th>
         <th>German Word</th>
         <th>English Meaning</th>
         <th>Article</th>
@@ -49,6 +50,7 @@
     <c:forEach var="vocabulary" items="${vocabularyList}">
 
         <tr>
+            <td>${vocabulary.user.username}</td>
             <td>${vocabulary.germanWord}</td>
             <td>${vocabulary.englishMeaning}</td>
             <td>${vocabulary.article}</td>
