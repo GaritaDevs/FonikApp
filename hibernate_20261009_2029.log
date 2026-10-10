@@ -1,0 +1,772 @@
+[DEBUG] 2026-10-09 20:29:08.138 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2026-10-09 20:29:08.152 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2026-10-09 20:29:08.163 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2026-10-09 20:29:08.212 [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[DEBUG] 2026-10-09 20:29:08.216 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2026-10-09 20:29:08.785 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2026-10-09 20:29:08.788 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2026-10-09 20:29:08.811 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2026-10-09 20:29:09.489 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2026-10-09 20:29:09.523 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2026-10-09 20:29:09.525 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2026-10-09 20:29:09.570 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[DEBUG] 2026-10-09 20:29:10.545 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@8a62297
+[DEBUG] 2026-10-09 20:29:10.545 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@8a62297
+[DEBUG] 2026-10-09 20:29:10.546 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@8a62297
+[DEBUG] 2026-10-09 20:29:10.547 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@659925f4
+[DEBUG] 2026-10-09 20:29:10.548 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2787de58
+[DEBUG] 2026-10-09 20:29:10.549 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@5b022357
+[DEBUG] 2026-10-09 20:29:10.551 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@6ceb7b5e
+[DEBUG] 2026-10-09 20:29:10.551 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@6ceb7b5e
+[DEBUG] 2026-10-09 20:29:10.551 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6ceb7b5e
+[DEBUG] 2026-10-09 20:29:10.553 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@5965844d
+[DEBUG] 2026-10-09 20:29:10.554 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@5965844d
+[DEBUG] 2026-10-09 20:29:10.554 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@5965844d
+[DEBUG] 2026-10-09 20:29:10.557 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4d8126f
+[DEBUG] 2026-10-09 20:29:10.557 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4d8126f
+[DEBUG] 2026-10-09 20:29:10.557 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4d8126f
+[DEBUG] 2026-10-09 20:29:10.559 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@1bbae752
+[DEBUG] 2026-10-09 20:29:10.559 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@1bbae752
+[DEBUG] 2026-10-09 20:29:10.559 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1bbae752
+[DEBUG] 2026-10-09 20:29:10.562 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@74971ed9
+[DEBUG] 2026-10-09 20:29:10.562 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@74971ed9
+[DEBUG] 2026-10-09 20:29:10.563 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@74971ed9
+[DEBUG] 2026-10-09 20:29:10.564 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7a24eb3
+[DEBUG] 2026-10-09 20:29:10.564 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7a24eb3
+[DEBUG] 2026-10-09 20:29:10.565 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7a24eb3
+[DEBUG] 2026-10-09 20:29:10.566 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@677b8e13
+[DEBUG] 2026-10-09 20:29:10.567 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@677b8e13
+[DEBUG] 2026-10-09 20:29:10.567 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@677b8e13
+[DEBUG] 2026-10-09 20:29:10.568 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@57540fd0
+[DEBUG] 2026-10-09 20:29:10.569 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@57540fd0
+[DEBUG] 2026-10-09 20:29:10.571 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3adbe50f
+[DEBUG] 2026-10-09 20:29:10.571 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3adbe50f
+[DEBUG] 2026-10-09 20:29:10.574 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@67001148
+[DEBUG] 2026-10-09 20:29:10.575 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@67001148
+[DEBUG] 2026-10-09 20:29:10.577 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@64030b91
+[DEBUG] 2026-10-09 20:29:10.578 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@441cc260
+[DEBUG] 2026-10-09 20:29:10.581 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@55b8dbda
+[DEBUG] 2026-10-09 20:29:10.581 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@55b8dbda
+[DEBUG] 2026-10-09 20:29:10.582 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@5b22b970
+[DEBUG] 2026-10-09 20:29:10.583 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5b22b970
+[DEBUG] 2026-10-09 20:29:10.588 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@353efdbf
+[DEBUG] 2026-10-09 20:29:10.588 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@353efdbf
+[DEBUG] 2026-10-09 20:29:10.591 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@f2e4acf
+[DEBUG] 2026-10-09 20:29:10.592 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@f2e4acf
+[DEBUG] 2026-10-09 20:29:10.595 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@566d0c69
+[DEBUG] 2026-10-09 20:29:10.595 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@566d0c69
+[DEBUG] 2026-10-09 20:29:10.597 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@151335cb
+[DEBUG] 2026-10-09 20:29:10.597 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@151335cb
+[DEBUG] 2026-10-09 20:29:10.600 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4abf3f0
+[DEBUG] 2026-10-09 20:29:10.600 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4abf3f0
+[DEBUG] 2026-10-09 20:29:10.603 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@5e39850
+[DEBUG] 2026-10-09 20:29:10.603 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@5e39850
+[DEBUG] 2026-10-09 20:29:10.606 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@476ec9d0
+[DEBUG] 2026-10-09 20:29:10.606 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@476ec9d0
+[DEBUG] 2026-10-09 20:29:10.610 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@51ec2df1
+[DEBUG] 2026-10-09 20:29:10.610 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@51ec2df1
+[DEBUG] 2026-10-09 20:29:10.613 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@64138b0c
+[DEBUG] 2026-10-09 20:29:10.613 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@64138b0c
+[DEBUG] 2026-10-09 20:29:10.614 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@1698d7c0
+[DEBUG] 2026-10-09 20:29:10.615 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@1698d7c0
+[DEBUG] 2026-10-09 20:29:10.615 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@1698d7c0
+[DEBUG] 2026-10-09 20:29:10.618 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@782168b7
+[DEBUG] 2026-10-09 20:29:10.620 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@2b214b94
+[DEBUG] 2026-10-09 20:29:10.620 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2b214b94
+[DEBUG] 2026-10-09 20:29:10.620 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2b214b94
+[DEBUG] 2026-10-09 20:29:10.621 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6daf2337
+[DEBUG] 2026-10-09 20:29:10.623 [main] BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@60e5272
+[DEBUG] 2026-10-09 20:29:10.625 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@52b6319f
+[DEBUG] 2026-10-09 20:29:10.625 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@52b6319f
+[DEBUG] 2026-10-09 20:29:10.627 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@215a34b4
+[DEBUG] 2026-10-09 20:29:10.628 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@215a34b4
+[DEBUG] 2026-10-09 20:29:10.629 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@706cb08
+[DEBUG] 2026-10-09 20:29:10.629 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@706cb08
+[DEBUG] 2026-10-09 20:29:10.631 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@5631962
+[DEBUG] 2026-10-09 20:29:10.631 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@5631962
+[DEBUG] 2026-10-09 20:29:10.632 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3b6c624
+[DEBUG] 2026-10-09 20:29:10.633 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3b6c624
+[DEBUG] 2026-10-09 20:29:10.634 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5754de72
+[DEBUG] 2026-10-09 20:29:10.636 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@1eb6e1c
+[DEBUG] 2026-10-09 20:29:10.637 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@1eb6e1c
+[DEBUG] 2026-10-09 20:29:10.637 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@1eb6e1c
+[DEBUG] 2026-10-09 20:29:10.639 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@29852487
+[DEBUG] 2026-10-09 20:29:10.639 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@29852487
+[DEBUG] 2026-10-09 20:29:10.640 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@29852487
+[DEBUG] 2026-10-09 20:29:10.642 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@3be4f71
+[DEBUG] 2026-10-09 20:29:10.643 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@58399d82
+[DEBUG] 2026-10-09 20:29:10.645 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@78e89bfe
+[DEBUG] 2026-10-09 20:29:10.645 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@78e89bfe
+[DEBUG] 2026-10-09 20:29:10.645 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@78e89bfe
+[DEBUG] 2026-10-09 20:29:10.648 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@1e6cc850
+[DEBUG] 2026-10-09 20:29:10.648 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@1e6cc850
+[DEBUG] 2026-10-09 20:29:10.648 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@1e6cc850
+[DEBUG] 2026-10-09 20:29:10.649 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@656d10a4
+[DEBUG] 2026-10-09 20:29:10.649 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@7a344b65
+[DEBUG] 2026-10-09 20:29:10.652 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@2788d0fe
+[DEBUG] 2026-10-09 20:29:10.653 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@2788d0fe
+[DEBUG] 2026-10-09 20:29:10.653 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@4c03a37
+[DEBUG] 2026-10-09 20:29:10.657 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@769d513
+[DEBUG] 2026-10-09 20:29:10.657 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@769d513
+[DEBUG] 2026-10-09 20:29:10.660 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@9d200de
+[DEBUG] 2026-10-09 20:29:10.660 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@9d200de
+[DEBUG] 2026-10-09 20:29:10.661 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@cb0f763
+[DEBUG] 2026-10-09 20:29:10.661 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@213860b8
+[DEBUG] 2026-10-09 20:29:10.663 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@15fb7a32
+[DEBUG] 2026-10-09 20:29:10.669 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@6ed06f69
+[DEBUG] 2026-10-09 20:29:10.670 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6ed06f69
+[DEBUG] 2026-10-09 20:29:10.671 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@39109136
+[DEBUG] 2026-10-09 20:29:10.671 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@27c04377
+[DEBUG] 2026-10-09 20:29:10.671 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@34dc85a
+[DEBUG] 2026-10-09 20:29:10.671 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@67403656
+[DEBUG] 2026-10-09 20:29:10.672 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@5a6482a9
+[DEBUG] 2026-10-09 20:29:10.672 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7f9ab969
+[DEBUG] 2026-10-09 20:29:10.672 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@12f8b1d8
+[DEBUG] 2026-10-09 20:29:10.672 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@746cd757
+[DEBUG] 2026-10-09 20:29:10.753 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2026-10-09 20:29:10.754 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2026-10-09 20:29:10.756 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2026-10-09 20:29:10.756 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2026-10-09 20:29:10.757 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2026-10-09 20:29:10.759 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2026-10-09 20:29:10.760 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2026-10-09 20:29:10.761 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2026-10-09 20:29:10.763 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2026-10-09 20:29:10.763 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2026-10-09 20:29:10.764 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2026-10-09 20:29:10.764 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2026-10-09 20:29:10.765 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2026-10-09 20:29:10.766 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[WARN ] 2026-10-09 20:29:10.771 [main] ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+[WARN ] 2026-10-09 20:29:10.776 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] 2026-10-09 20:29:10.787 [main] pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/german_tracker_test]
+[INFO ] 2026-10-09 20:29:10.787 [main] pooling - HHH10001001: Connection properties: {password=student, user=root}
+[INFO ] 2026-10-09 20:29:10.787 [main] pooling - HHH10001003: Autocommit mode: false
+[DEBUG] 2026-10-09 20:29:10.795 [main] DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+[INFO ] 2026-10-09 20:29:10.795 [main] DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[DEBUG] 2026-10-09 20:29:11.823 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.4.11
+      major : 8
+      minor : 4
+[DEBUG] 2026-10-09 20:29:11.824 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2026-10-09 20:29:11.824 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2026-10-09 20:29:11.893 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2026-10-09 20:29:11.936 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2026-10-09 20:29:11.939 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[INFO ] 2026-10-09 20:29:11.979 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2026-10-09 20:29:12.002 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1de9b505] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7b122839]
+[DEBUG] 2026-10-09 20:29:12.113 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2026-10-09 20:29:12.146 [main] AnnotationBinder - Binding entity from annotated class: fonik.app.entity.User
+[DEBUG] 2026-10-09 20:29:12.189 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2026-10-09 20:29:12.200 [main] EntityBinder - Import with entity name User
+[DEBUG] 2026-10-09 20:29:12.206 [main] EntityBinder - Bind entity fonik.app.entity.User on table users
+[DEBUG] 2026-10-09 20:29:12.271 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.277 [main] ClassLoaderAccessImpl - Not known whether passed class name [fonik.app.entity.User] is safe
+[DEBUG] 2026-10-09 20:29:12.277 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : fonik.app.entity.User
+[DEBUG] 2026-10-09 20:29:12.278 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2026-10-09 20:29:12.282 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [fonik.app.entity.User:id]
+[DEBUG] 2026-10-09 20:29:12.288 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2026-10-09 20:29:12.294 [main] PropertyBinder - Building property id
+[DEBUG] 2026-10-09 20:29:12.301 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+[DEBUG] 2026-10-09 20:29:12.302 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=email, insertable=true, updatable=true, unique=true}
+[DEBUG] 2026-10-09 20:29:12.303 [main] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2026-10-09 20:29:12.303 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [fonik.app.entity.User:email]
+[DEBUG] 2026-10-09 20:29:12.303 [main] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2026-10-09 20:29:12.303 [main] PropertyBinder - Building property email
+[DEBUG] 2026-10-09 20:29:12.304 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.304 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2026-10-09 20:29:12.304 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [fonik.app.entity.User:password]
+[DEBUG] 2026-10-09 20:29:12.305 [main] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2026-10-09 20:29:12.305 [main] PropertyBinder - Building property password
+[DEBUG] 2026-10-09 20:29:12.306 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=username, insertable=true, updatable=true, unique=true}
+[DEBUG] 2026-10-09 20:29:12.306 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2026-10-09 20:29:12.306 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [fonik.app.entity.User:username]
+[DEBUG] 2026-10-09 20:29:12.307 [main] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2026-10-09 20:29:12.307 [main] PropertyBinder - Building property username
+[DEBUG] 2026-10-09 20:29:12.310 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2026-10-09 20:29:12.311 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=vocabulary, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.316 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.337 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.339 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=vocabulary_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.340 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='vocabulary_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2026-10-09 20:29:12.344 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2026-10-09 20:29:12.345 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2026-10-09 20:29:12.346 [main] CollectionBinder - Collection role: fonik.app.entity.User.vocabulary
+[DEBUG] 2026-10-09 20:29:12.351 [main] PropertyBinder - Building property vocabulary
+[DEBUG] 2026-10-09 20:29:12.365 [main] AnnotationBinder - Binding entity from annotated class: fonik.app.entity.Vocabulary
+[DEBUG] 2026-10-09 20:29:12.366 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2026-10-09 20:29:12.366 [main] EntityBinder - Import with entity name Vocabulary
+[DEBUG] 2026-10-09 20:29:12.366 [main] EntityBinder - Bind entity fonik.app.entity.Vocabulary on table vocabulary
+[DEBUG] 2026-10-09 20:29:12.374 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(vocabulary), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.374 [main] ClassLoaderAccessImpl - Not known whether passed class name [fonik.app.entity.Vocabulary] is safe
+[DEBUG] 2026-10-09 20:29:12.375 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : fonik.app.entity.Vocabulary
+[DEBUG] 2026-10-09 20:29:12.376 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2026-10-09 20:29:12.376 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [fonik.app.entity.Vocabulary:id]
+[DEBUG] 2026-10-09 20:29:12.376 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2026-10-09 20:29:12.377 [main] PropertyBinder - Building property id
+[DEBUG] 2026-10-09 20:29:12.377 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+[DEBUG] 2026-10-09 20:29:12.377 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(vocabulary), mappingColumn=article, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.377 [main] PropertyBinder - MetadataSourceProcessor property article with lazy=false
+[DEBUG] 2026-10-09 20:29:12.377 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [fonik.app.entity.Vocabulary:article]
+[DEBUG] 2026-10-09 20:29:12.378 [main] SimpleValueBinder - building SimpleValue for article
+[DEBUG] 2026-10-09 20:29:12.378 [main] PropertyBinder - Building property article
+[DEBUG] 2026-10-09 20:29:12.378 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(vocabulary), mappingColumn=english_meaning, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.378 [main] PropertyBinder - MetadataSourceProcessor property englishMeaning with lazy=false
+[DEBUG] 2026-10-09 20:29:12.379 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [fonik.app.entity.Vocabulary:englishMeaning]
+[DEBUG] 2026-10-09 20:29:12.379 [main] SimpleValueBinder - building SimpleValue for englishMeaning
+[DEBUG] 2026-10-09 20:29:12.379 [main] PropertyBinder - Building property englishMeaning
+[DEBUG] 2026-10-09 20:29:12.379 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(vocabulary), mappingColumn=german_word, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.380 [main] PropertyBinder - MetadataSourceProcessor property germanWord with lazy=false
+[DEBUG] 2026-10-09 20:29:12.380 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [fonik.app.entity.Vocabulary:germanWord]
+[DEBUG] 2026-10-09 20:29:12.380 [main] SimpleValueBinder - building SimpleValue for germanWord
+[DEBUG] 2026-10-09 20:29:12.381 [main] PropertyBinder - Building property germanWord
+[DEBUG] 2026-10-09 20:29:12.381 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(vocabulary), mappingColumn=plural, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.382 [main] PropertyBinder - MetadataSourceProcessor property plural with lazy=false
+[DEBUG] 2026-10-09 20:29:12.382 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [fonik.app.entity.Vocabulary:plural]
+[DEBUG] 2026-10-09 20:29:12.382 [main] SimpleValueBinder - building SimpleValue for plural
+[DEBUG] 2026-10-09 20:29:12.382 [main] PropertyBinder - Building property plural
+[DEBUG] 2026-10-09 20:29:12.383 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2026-10-09 20:29:12.383 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(vocabulary), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2026-10-09 20:29:12.387 [main] PropertyBinder - Building property user
+[DEBUG] 2026-10-09 20:29:12.394 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2026-10-09 20:29:12.394 [main] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2026-10-09 20:29:12.394 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2026-10-09 20:29:12.394 [main] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2026-10-09 20:29:12.394 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2026-10-09 20:29:12.394 [main] SimpleValueBinder - Starting fillSimpleValue for article
+[DEBUG] 2026-10-09 20:29:12.394 [main] SimpleValueBinder - Starting fillSimpleValue for englishMeaning
+[DEBUG] 2026-10-09 20:29:12.395 [main] SimpleValueBinder - Starting fillSimpleValue for germanWord
+[DEBUG] 2026-10-09 20:29:12.395 [main] SimpleValueBinder - Starting fillSimpleValue for plural
+[DEBUG] 2026-10-09 20:29:12.406 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2026-10-09 20:29:12.407 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [vocabulary]
+[DEBUG] 2026-10-09 20:29:12.407 [main] CollectionSecondPass - Second pass for collection: fonik.app.entity.User.vocabulary
+[DEBUG] 2026-10-09 20:29:12.409 [main] CollectionBinder - Binding a OneToMany: fonik.app.entity.User.vocabulary through a foreign key
+[DEBUG] 2026-10-09 20:29:12.411 [main] CollectionBinder - Mapping collection: fonik.app.entity.User.vocabulary -> vocabulary
+[DEBUG] 2026-10-09 20:29:12.413 [main] TableBinder - Retrieving property fonik.app.entity.Vocabulary.user
+[DEBUG] 2026-10-09 20:29:12.414 [main] CollectionSecondPass - Mapped collection key: user_id, one-to-many: fonik.app.entity.Vocabulary
+[DEBUG] 2026-10-09 20:29:12.414 [main] InFlightMetadataCollectorImpl - Resolving reference to class: fonik.app.entity.User
+[DEBUG] 2026-10-09 20:29:12.423 [main] InFlightMetadataCollectorImpl - Resolving reference to class: fonik.app.entity.User
+[DEBUG] 2026-10-09 20:29:12.524 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2026-10-09 20:29:12.526 [main] Settings - SessionFactory name : null
+[DEBUG] 2026-10-09 20:29:12.527 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2026-10-09 20:29:12.527 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2026-10-09 20:29:12.527 [main] Settings - Statistics: disabled
+[DEBUG] 2026-10-09 20:29:12.527 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2026-10-09 20:29:12.527 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2026-10-09 20:29:12.527 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2026-10-09 20:29:12.528 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2026-10-09 20:29:12.528 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2026-10-09 20:29:12.528 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2026-10-09 20:29:12.528 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2026-10-09 20:29:12.528 [main] Settings - Default null ordering: NONE
+[DEBUG] 2026-10-09 20:29:12.528 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2026-10-09 20:29:12.529 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2026-10-09 20:29:12.529 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2026-10-09 20:29:12.529 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2026-10-09 20:29:12.529 [main] Settings - Query language substitutions: {}
+[DEBUG] 2026-10-09 20:29:12.529 [main] Settings - Named query checking : enabled
+[DEBUG] 2026-10-09 20:29:12.529 [main] Settings - Second-level cache: disabled
+[DEBUG] 2026-10-09 20:29:12.529 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2026-10-09 20:29:12.530 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2026-10-09 20:29:12.530 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2026-10-09 20:29:12.530 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2026-10-09 20:29:12.530 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2026-10-09 20:29:12.530 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2026-10-09 20:29:12.530 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2026-10-09 20:29:12.530 [main] Settings - JDBC batch size: 15
+[DEBUG] 2026-10-09 20:29:12.531 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2026-10-09 20:29:12.531 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2026-10-09 20:29:12.531 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2026-10-09 20:29:12.531 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2026-10-09 20:29:12.531 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2026-10-09 20:29:12.531 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2026-10-09 20:29:12.531 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2026-10-09 20:29:12.532 [main] Settings - JPA compliance - query : disabled
+[DEBUG] 2026-10-09 20:29:12.532 [main] Settings - JPA compliance - closed-handling : disabled
+[DEBUG] 2026-10-09 20:29:12.532 [main] Settings - JPA compliance - lists : disabled
+[DEBUG] 2026-10-09 20:29:12.532 [main] Settings - JPA compliance - transactions : disabled
+[DEBUG] 2026-10-09 20:29:12.705 [main] SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[DEBUG] 2026-10-09 20:29:12.708 [main] SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[DEBUG] 2026-10-09 20:29:12.752 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2026-10-09 20:29:12.753 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=Cp1252, hibernate.c3p0.min_size=5, java.class.path=C:\Users\egaritaluis\IdeaProjects\GermanApp\target\test-classes;C:\Users\egaritaluis\IdeaProjects\GermanApp\target\classes;C:\Users\egaritaluis\.m2\repository\org\hibernate\hibernate-core\5.6.15.Final\hibernate-core-5.6.15.Final.jar;C:\Users\egaritaluis\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\egaritaluis\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\egaritaluis\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\egaritaluis\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\egaritaluis\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\egaritaluis\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\egaritaluis\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\egaritaluis\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\egaritaluis\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\egaritaluis\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\egaritaluis\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\egaritaluis\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\egaritaluis\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\egaritaluis\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\egaritaluis\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\egaritaluis\.m2\repository\org\junit\platform\junit-platform-runner\1.0.0\junit-platform-runner-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\platform\junit-platform-launcher\1.0.0\junit-platform-launcher-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\platform\junit-platform-suite-api\1.0.0\junit-platform-suite-api-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\platform\junit-platform-commons\1.0.0\junit-platform-commons-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\vintage\junit-vintage-engine\4.12.0\junit-vintage-engine-4.12.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\platform\junit-platform-engine\1.0.0\junit-platform-engine-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\opentest4j\opentest4j\1.0.0\opentest4j-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.0.0\junit-jupiter-engine-5.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.0.0\junit-jupiter-api-5.0.0.jar;C:\Users\egaritaluis\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\egaritaluis\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\egaritaluis\.m2\repository\javax\javaee-web-api\7.0\javaee-web-api-7.0.jar;C:\Users\egaritaluis\.m2\repository\mysql\mysql-connector-java\8.0.16\mysql-connector-java-8.0.16.jar;C:\Users\egaritaluis\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\egaritaluis\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;C:\Users\egaritaluis\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\egaritaluis\.m2\repository\org\apache\logging\log4j\log4j-core\2.10.0\log4j-core-2.10.0.jar;, java.vm.vendor=Microsoft, sun.arch.data.model=64, user.variant=, java.vendor.url=https://www.microsoft.com, user.timezone=America/Chicago, os.name=Windows 11, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Microsoft\jdk-11.0.32.101-hotspot\bin, sun.java.command=C:\Users\egaritaluis\IdeaProjects\GermanApp\target\surefire\surefirebooter536326484003733963.jar C:\Users\egaritaluis\IdeaProjects\GermanApp\target\surefire\surefire13334765359105106157tmp C:\Users\egaritaluis\IdeaProjects\GermanApp\target\surefire\surefire_07365989794039687910tmp, jdk.debug=release, surefire.test.class.path=C:\Users\egaritaluis\IdeaProjects\GermanApp\target\test-classes;C:\Users\egaritaluis\IdeaProjects\GermanApp\target\classes;C:\Users\egaritaluis\.m2\repository\org\hibernate\hibernate-core\5.6.15.Final\hibernate-core-5.6.15.Final.jar;C:\Users\egaritaluis\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\egaritaluis\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\egaritaluis\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\egaritaluis\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\egaritaluis\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\egaritaluis\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\egaritaluis\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\egaritaluis\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\egaritaluis\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\egaritaluis\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\egaritaluis\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\egaritaluis\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\egaritaluis\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\egaritaluis\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\egaritaluis\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\egaritaluis\.m2\repository\org\junit\platform\junit-platform-runner\1.0.0\junit-platform-runner-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\platform\junit-platform-launcher\1.0.0\junit-platform-launcher-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\platform\junit-platform-suite-api\1.0.0\junit-platform-suite-api-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\platform\junit-platform-commons\1.0.0\junit-platform-commons-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\vintage\junit-vintage-engine\4.12.0\junit-vintage-engine-4.12.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\platform\junit-platform-engine\1.0.0\junit-platform-engine-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\opentest4j\opentest4j\1.0.0\opentest4j-1.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.0.0\junit-jupiter-engine-5.0.0.jar;C:\Users\egaritaluis\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.0.0\junit-jupiter-api-5.0.0.jar;C:\Users\egaritaluis\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\egaritaluis\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\egaritaluis\.m2\repository\javax\javaee-web-api\7.0\javaee-web-api-7.0.jar;C:\Users\egaritaluis\.m2\repository\mysql\mysql-connector-java\8.0.16\mysql-connector-java-8.0.16.jar;C:\Users\egaritaluis\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\egaritaluis\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;C:\Users\egaritaluis\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\egaritaluis\.m2\repository\org\apache\logging\log4j\log4j-core\2.10.0\log4j-core-2.10.0.jar;, sun.cpu.endian=little, user.home=C:\Users\egaritaluis, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2026-08-18, java.home=C:\Program Files\Microsoft\jdk-11.0.32.101-hotspot, file.separator=\, basedir=C:\Users\egaritaluis\IdeaProjects\GermanApp, style.color=always, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, surefire.real.class.path=C:\Users\egaritaluis\IdeaProjects\GermanApp\target\surefire\surefirebooter536326484003733963.jar, user.script=, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.32.1+1-LTS, user.name=egaritaluis, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/german_tracker_test, file.encoding=Cp1252, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.version=Microsoft-14930745, maven.ext.class.path=C:\IDE\IntelliJ_IDEA\plugins\maven\lib\intellij.maven.rt\maven-event-listener.jar, localRepository=C:\Users\egaritaluis\.m2\repository, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://github.com/microsoft/openjdk/issues, java.io.tmpdir=C:\Users\EGARIT~1\AppData\Local\Temp\, idea.version=2026.1.5, java.version=11.0.32.1, user.dir=C:\Users\egaritaluis\IdeaProjects\GermanApp, os.arch=amd64, connection.username=root, jansi.passthrough=true, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@3ddb774f, java.library.path=C:\Program Files\Microsoft\jdk-11.0.32.101-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.32.101-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\CCM;C:\Program Files\dotnet\;C:\WINDOWS\CCM;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\KeePassXC\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\egaritaluis\AppData\Local\Microsoft\WindowsApps;C:\Users\egaritaluis\AppData\Local\Programs\Git\cmd;., java.vendor=Microsoft, java.vm.info=mixed mode, sharing, java.vm.version=11.0.32.1+1-LTS, java.specification.maintenance.version=3, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, maven.repo.local=C:\Users\egaritaluis\.m2\repository, connection.url=jdbc:mysql://localhost:3306/german_tracker_test, java.class.version=55.0}
+[DEBUG] 2026-10-09 20:29:12.813 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2026-10-09 20:29:12.813 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2026-10-09 20:29:12.815 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2026-10-09 20:29:12.815 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1de9b505] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@55f4887d]
+[DEBUG] 2026-10-09 20:29:13.002 [main] interceptor - To-one property `fonik.app.entity.Vocabulary#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[DEBUG] 2026-10-09 20:29:13.004 [main] interceptor - To-one property `fonik.app.entity.Vocabulary#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[DEBUG] 2026-10-09 20:29:13.005 [main] ClassLoaderAccessImpl - Not known whether passed class name [fonik.app.entity.Vocabulary] is safe
+[DEBUG] 2026-10-09 20:29:13.005 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : fonik.app.entity.Vocabulary
+[DEBUG] 2026-10-09 20:29:13.536 [main] interceptor - To-one property `fonik.app.entity.Vocabulary#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[DEBUG] 2026-10-09 20:29:13.537 [main] interceptor - To-one property `fonik.app.entity.Vocabulary#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[DEBUG] 2026-10-09 20:29:13.553 [main] ClassLoaderAccessImpl - Not known whether passed class name [fonik.app.entity.User] is safe
+[DEBUG] 2026-10-09 20:29:13.553 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : fonik.app.entity.User
+[DEBUG] 2026-10-09 20:29:13.632 [main] AbstractCollectionPersister - Static SQL for collection: fonik.app.entity.User.vocabulary
+[DEBUG] 2026-10-09 20:29:13.632 [main] AbstractCollectionPersister -  Row insert: update vocabulary set user_id=? where id=?
+[DEBUG] 2026-10-09 20:29:13.633 [main] AbstractCollectionPersister -  Row update: update vocabulary set  where id=?
+[DEBUG] 2026-10-09 20:29:13.633 [main] AbstractCollectionPersister -  Row delete: update vocabulary set user_id=null where user_id=? and id=?
+[DEBUG] 2026-10-09 20:29:13.633 [main] AbstractCollectionPersister -  One-shot delete: update vocabulary set user_id=null where user_id=?
+[DEBUG] 2026-10-09 20:29:13.641 [main] AbstractEntityPersister - Static SQL for entity: fonik.app.entity.Vocabulary
+[DEBUG] 2026-10-09 20:29:13.641 [main] AbstractEntityPersister -  Version select: select id from vocabulary where id =?
+[DEBUG] 2026-10-09 20:29:13.642 [main] AbstractEntityPersister -  Snapshot select: select vocabulary_.id, vocabulary_.article as article2_1_, vocabulary_.english_meaning as english_3_1_, vocabulary_.german_word as german_w4_1_, vocabulary_.plural as plural5_1_, vocabulary_.user_id as user_id6_1_ from vocabulary vocabulary_ where vocabulary_.id=?
+[DEBUG] 2026-10-09 20:29:13.642 [main] AbstractEntityPersister -  Insert 0: insert into vocabulary (article, english_meaning, german_word, plural, user_id, id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2026-10-09 20:29:13.642 [main] AbstractEntityPersister -  Update 0: update vocabulary set article=?, english_meaning=?, german_word=?, plural=?, user_id=? where id=?
+[DEBUG] 2026-10-09 20:29:13.642 [main] AbstractEntityPersister -  Delete 0: delete from vocabulary where id=?
+[DEBUG] 2026-10-09 20:29:13.642 [main] AbstractEntityPersister -  Identity insert: insert into vocabulary (article, english_meaning, german_word, plural, user_id) values (?, ?, ?, ?, ?)
+[DEBUG] 2026-10-09 20:29:13.708 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4b957db0]
+[DEBUG] 2026-10-09 20:29:13.711 [main] MetamodelGraphWalker - Visiting attribute path : article
+[DEBUG] 2026-10-09 20:29:13.712 [main] MetamodelGraphWalker - Visiting attribute path : englishMeaning
+[DEBUG] 2026-10-09 20:29:13.712 [main] MetamodelGraphWalker - Visiting attribute path : germanWord
+[DEBUG] 2026-10-09 20:29:13.712 [main] MetamodelGraphWalker - Visiting attribute path : plural
+[DEBUG] 2026-10-09 20:29:13.712 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2026-10-09 20:29:13.722 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@26457986]
+[DEBUG] 2026-10-09 20:29:13.726 [main] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2026-10-09 20:29:13.726 [main] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2026-10-09 20:29:13.726 [main] MetamodelGraphWalker - Visiting attribute path : user.username
+[DEBUG] 2026-10-09 20:29:13.726 [main] MetamodelGraphWalker - Visiting attribute path : user.vocabulary
+[DEBUG] 2026-10-09 20:29:13.727 [main] MetamodelGraphWalker - Property path deemed to be circular : user.vocabulary
+[DEBUG] 2026-10-09 20:29:13.727 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2026-10-09 20:29:13.757 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2026-10-09 20:29:13.767 [main] LoadPlanTreePrinter - LoadPlan(entity=fonik.app.entity.Vocabulary)
+    - Returns
+       - EntityReturnImpl(entity=fonik.app.entity.Vocabulary, querySpaceUid=<gen:0>, path=fonik.app.entity.Vocabulary)
+          - EntityAttributeFetchImpl(entity=fonik.app.entity.User, querySpaceUid=<gen:1>, path=fonik.app.entity.Vocabulary.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=fonik.app.entity.Vocabulary)
+          - SQL table alias mapping - vocabulary0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=fonik.app.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2026-10-09 20:29:13.771 [main] EntityLoader - Static select for entity fonik.app.entity.Vocabulary [NONE]: select vocabulary0_.id as id1_1_0_, vocabulary0_.article as article2_1_0_, vocabulary0_.english_meaning as english_3_1_0_, vocabulary0_.german_word as german_w4_1_0_, vocabulary0_.plural as plural5_1_0_, vocabulary0_.user_id as user_id6_1_0_, user1_.id as id1_0_1_, user1_.email as email2_0_1_, user1_.password as password3_0_1_, user1_.username as username4_0_1_ from vocabulary vocabulary0_ inner join users user1_ on vocabulary0_.user_id=user1_.id where vocabulary0_.id=?
+[DEBUG] 2026-10-09 20:29:13.771 [main] AbstractEntityPersister - Static SQL for entity: fonik.app.entity.User
+[DEBUG] 2026-10-09 20:29:13.771 [main] AbstractEntityPersister -  Version select: select id from users where id =?
+[DEBUG] 2026-10-09 20:29:13.771 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.email as email2_0_, user_.password as password3_0_, user_.username as username4_0_ from users user_ where user_.id=?
+[DEBUG] 2026-10-09 20:29:13.771 [main] AbstractEntityPersister -  Insert 0: insert into users (email, password, username, id) values (?, ?, ?, ?)
+[DEBUG] 2026-10-09 20:29:13.771 [main] AbstractEntityPersister -  Update 0: update users set email=?, password=?, username=? where id=?
+[DEBUG] 2026-10-09 20:29:13.771 [main] AbstractEntityPersister -  Delete 0: delete from users where id=?
+[DEBUG] 2026-10-09 20:29:13.773 [main] AbstractEntityPersister -  Identity insert: insert into users (email, password, username) values (?, ?, ?)
+[DEBUG] 2026-10-09 20:29:13.773 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7ddcb0dc]
+[DEBUG] 2026-10-09 20:29:13.773 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2026-10-09 20:29:13.773 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2026-10-09 20:29:13.773 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2026-10-09 20:29:13.773 [main] MetamodelGraphWalker - Visiting attribute path : vocabulary
+[DEBUG] 2026-10-09 20:29:13.775 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@355ce6a6]
+[DEBUG] 2026-10-09 20:29:13.777 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6986f93e]
+[DEBUG] 2026-10-09 20:29:13.778 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2026-10-09 20:29:13.779 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2026-10-09 20:29:13.779 [main] LoadPlanTreePrinter - LoadPlan(entity=fonik.app.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=fonik.app.entity.User, querySpaceUid=<gen:0>, path=fonik.app.entity.User)
+          - CollectionAttributeFetchImpl(collection=fonik.app.entity.User.vocabulary, querySpaceUid=<gen:1>, path=fonik.app.entity.User.vocabulary)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=fonik.app.entity.Vocabulary, querySpaceUid=<gen:2>, path=fonik.app.entity.User.vocabulary.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=fonik.app.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2026-10-09 20:29:13.780 [main] EntityLoader - Static select for entity fonik.app.entity.User [NONE]: select user0_.id as id1_0_0_, user0_.email as email2_0_0_, user0_.password as password3_0_0_, user0_.username as username4_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2026-10-09 20:29:13.790 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@418f890f]
+[DEBUG] 2026-10-09 20:29:13.791 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3d3c886f]
+[DEBUG] 2026-10-09 20:29:13.793 [main] MetamodelGraphWalker - Visiting attribute path : article
+[DEBUG] 2026-10-09 20:29:13.793 [main] MetamodelGraphWalker - Visiting attribute path : englishMeaning
+[DEBUG] 2026-10-09 20:29:13.793 [main] MetamodelGraphWalker - Visiting attribute path : germanWord
+[DEBUG] 2026-10-09 20:29:13.794 [main] MetamodelGraphWalker - Visiting attribute path : plural
+[DEBUG] 2026-10-09 20:29:13.794 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2026-10-09 20:29:13.794 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2026-10-09 20:29:13.795 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2026-10-09 20:29:13.810 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2026-10-09 20:29:13.811 [main] LoadPlanTreePrinter - LoadPlan(collection=fonik.app.entity.User.vocabulary)
+    - Returns
+       - CollectionReturnImpl(collection=fonik.app.entity.User.vocabulary, querySpaceUid=<gen:0>, path=[fonik.app.entity.User.vocabulary])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=fonik.app.entity.Vocabulary, querySpaceUid=<gen:1>, path=[fonik.app.entity.User.vocabulary].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=fonik.app.entity.User.vocabulary)
+          - SQL table alias mapping - vocabulary0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id6_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=fonik.app.entity.Vocabulary)
+                - SQL table alias mapping - vocabulary0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2026-10-09 20:29:13.812 [main] CollectionLoader - Static select for collection fonik.app.entity.User.vocabulary: select vocabulary0_.user_id as user_id6_1_0_, vocabulary0_.id as id1_1_0_, vocabulary0_.id as id1_1_1_, vocabulary0_.article as article2_1_1_, vocabulary0_.english_meaning as english_3_1_1_, vocabulary0_.german_word as german_w4_1_1_, vocabulary0_.plural as plural5_1_1_, vocabulary0_.user_id as user_id6_1_1_ from vocabulary vocabulary0_ where vocabulary0_.user_id=?
+[DEBUG] 2026-10-09 20:29:13.895 [main] SchemaManagementToolCoordinator - No schema actions specified
+[DEBUG] 2026-10-09 20:29:13.896 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2026-10-09 20:29:13.896 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2026-10-09 20:29:13.897 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2026-10-09 20:29:13.913 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2026-10-09 20:29:13.914 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2026-10-09 20:29:13.930 [main] SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[DEBUG] 2026-10-09 20:29:13.934 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@43c7fe8a
+[DEBUG] 2026-10-09 20:29:13.946 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2026-10-09 20:29:13.947 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2026-10-09 20:29:13.951 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@28768e25
+[DEBUG] 2026-10-09 20:29:13.955 [main] SessionFactoryRegistry - Registering SessionFactory: dcfa0bc7-fa1b-4b88-91b7-6bcdceee2413 (<unnamed>)
+[DEBUG] 2026-10-09 20:29:13.956 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2026-10-09 20:29:14.093 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2026-10-09 20:29:14.787 [main] SQL - select vocabulary0_.id as id1_1_0_, vocabulary0_.article as article2_1_0_, vocabulary0_.english_meaning as english_3_1_0_, vocabulary0_.german_word as german_w4_1_0_, vocabulary0_.plural as plural5_1_0_, vocabulary0_.user_id as user_id6_1_0_, user1_.id as id1_0_1_, user1_.email as email2_0_1_, user1_.password as password3_0_1_, user1_.username as username4_0_1_ from vocabulary vocabulary0_ inner join users user1_ on vocabulary0_.user_id=user1_.id where vocabulary0_.id=?
+[DEBUG] 2026-10-09 20:29:14.850 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2026-10-09 20:29:14.868 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:14.869 [main] TwoPhaseLoad - Processing attribute `article` : value = der
+[DEBUG] 2026-10-09 20:29:14.870 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:14.870 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = dog
+[DEBUG] 2026-10-09 20:29:14.870 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:14.870 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Hundd
+[DEBUG] 2026-10-09 20:29:14.870 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:14.870 [main] TwoPhaseLoad - Processing attribute `plural` : value = Hunde
+[DEBUG] 2026-10-09 20:29:14.870 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:14.870 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:14.870 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:14.873 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:14.873 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:14.873 [main] TwoPhaseLoad - Processing attribute `email` : value = test@example.com
+[DEBUG] 2026-10-09 20:29:14.873 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:14.873 [main] TwoPhaseLoad - Processing attribute `password` : value = test123
+[DEBUG] 2026-10-09 20:29:14.874 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:14.874 [main] TwoPhaseLoad - Processing attribute `username` : value = testuser
+[DEBUG] 2026-10-09 20:29:14.874 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:14.874 [main] TwoPhaseLoad - Processing attribute `vocabulary` : value = NOT NULL COLLECTION
+[DEBUG] 2026-10-09 20:29:14.874 [main] TwoPhaseLoad - Attribute (`vocabulary`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:14.888 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:14.890 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : fonik.app.entity.Vocabulary#5
+[DEBUG] 2026-10-09 20:29:14.890 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:14.896 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2026-10-09 20:29:14.896 [main] TransactionImpl - begin
+[DEBUG] 2026-10-09 20:29:14.919 [main] TransactionImpl - committing
+[DEBUG] 2026-10-09 20:29:14.920 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2026-10-09 20:29:14.920 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2026-10-09 20:29:14.925 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2026-10-09 20:29:14.926 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2026-10-09 20:29:14.927 [main] EntityPrinter - Listing entities:
+[DEBUG] 2026-10-09 20:29:14.928 [main] EntityPrinter - fonik.app.entity.Vocabulary{englishMeaning=dog, plural=Hunde, germanWord=Hundd, id=5, user=fonik.app.entity.User#1, article=der}
+[DEBUG] 2026-10-09 20:29:14.937 [main] SQL - delete from vocabulary where id=?
+[DEBUG] 2026-10-09 20:29:14.949 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:14.949 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:14.949 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2026-10-09 20:29:14.950 [main] SQL - select vocabulary0_.id as id1_1_0_, vocabulary0_.article as article2_1_0_, vocabulary0_.english_meaning as english_3_1_0_, vocabulary0_.german_word as german_w4_1_0_, vocabulary0_.plural as plural5_1_0_, vocabulary0_.user_id as user_id6_1_0_, user1_.id as id1_0_1_, user1_.email as email2_0_1_, user1_.password as password3_0_1_, user1_.username as username4_0_1_ from vocabulary vocabulary0_ inner join users user1_ on vocabulary0_.user_id=user1_.id where vocabulary0_.id=?
+[DEBUG] 2026-10-09 20:29:14.953 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : fonik.app.entity.Vocabulary#5
+[DEBUG] 2026-10-09 20:29:14.953 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:15.277 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Vocabulary as generatedAlias0
+[DEBUG] 2026-10-09 20:29:15.362 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from fonik.app.entity.Vocabulary as generatedAlias0
+[DEBUG] 2026-10-09 20:29:15.377 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2026-10-09 20:29:15.391 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'fonik'
+       |     |  |  |  \-[IDENT] Node: 'app'
+       |     |  |  \-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'Vocabulary'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2026-10-09 20:29:15.442 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2026-10-09 20:29:15.484 [main] FromElement - FromClause{level=1} : fonik.app.entity.Vocabulary (generatedAlias0) -> vocabulary0_
+[DEBUG] 2026-10-09 20:29:15.487 [main] FromReferenceNode - Resolved : generatedAlias0 -> vocabulary0_.id
+[DEBUG] 2026-10-09 20:29:15.493 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2026-10-09 20:29:15.494 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} vocabulary0_.id ) ( FromClause{level=1} vocabulary vocabulary0_ ) )
+[DEBUG] 2026-10-09 20:29:15.519 [main] JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Vocabulary): [vocabulary]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(fonik.app.entity.Vocabulary)
+    |  | originalText: generatedAlias0
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+[DEBUG] 2026-10-09 20:29:15.534 [main] JoinProcessor - Using FROM fragment [vocabulary vocabulary0_]
+[DEBUG] 2026-10-09 20:29:15.536 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2026-10-09 20:29:15.541 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (vocabulary)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'vocabulary0_.id as id1_1_' {alias=generatedAlias0, className=fonik.app.entity.Vocabulary, tableAlias=vocabulary0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'vocabulary0_.article as article2_1_, vocabulary0_.english_meaning as english_3_1_, vocabulary0_.german_word as german_w4_1_, vocabulary0_.plural as plural5_1_, vocabulary0_.user_id as user_id6_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[vocabulary0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'vocabulary vocabulary0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=vocabulary,tableAlias=vocabulary0_,origin=null,columns={,className=fonik.app.entity.Vocabulary}}
+
+[DEBUG] 2026-10-09 20:29:15.541 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2026-10-09 20:29:15.561 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from fonik.app.entity.Vocabulary as generatedAlias0
+[DEBUG] 2026-10-09 20:29:15.562 [main] QueryTranslatorImpl - SQL: select vocabulary0_.id as id1_1_, vocabulary0_.article as article2_1_, vocabulary0_.english_meaning as english_3_1_, vocabulary0_.german_word as german_w4_1_, vocabulary0_.plural as plural5_1_, vocabulary0_.user_id as user_id6_1_ from vocabulary vocabulary0_
+[DEBUG] 2026-10-09 20:29:15.562 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2026-10-09 20:29:15.674 [main] SQL - select vocabulary0_.id as id1_1_, vocabulary0_.article as article2_1_, vocabulary0_.english_meaning as english_3_1_, vocabulary0_.german_word as german_w4_1_, vocabulary0_.plural as plural5_1_, vocabulary0_.user_id as user_id6_1_ from vocabulary vocabulary0_
+[DEBUG] 2026-10-09 20:29:15.693 [main] Loader - Result set row: 0
+[DEBUG] 2026-10-09 20:29:15.696 [main] Loader - Result row: EntityKey[fonik.app.entity.Vocabulary#4]
+[DEBUG] 2026-10-09 20:29:15.697 [main] Loader - Result set row: 1
+[DEBUG] 2026-10-09 20:29:15.697 [main] Loader - Result row: EntityKey[fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:15.698 [main] Loader - Result set row: 2
+[DEBUG] 2026-10-09 20:29:15.699 [main] Loader - Result row: EntityKey[fonik.app.entity.Vocabulary#6]
+[DEBUG] 2026-10-09 20:29:15.700 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#4]
+[DEBUG] 2026-10-09 20:29:15.700 [main] TwoPhaseLoad - Processing attribute `article` : value = das
+[DEBUG] 2026-10-09 20:29:15.700 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.700 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = house
+[DEBUG] 2026-10-09 20:29:15.700 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.700 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Haus
+[DEBUG] 2026-10-09 20:29:15.700 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.701 [main] TwoPhaseLoad - Processing attribute `plural` : value = Häuser
+[DEBUG] 2026-10-09 20:29:15.701 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.703 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:15.703 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.704 [main] SQL - select user0_.id as id1_0_0_, user0_.email as email2_0_0_, user0_.password as password3_0_0_, user0_.username as username4_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2026-10-09 20:29:15.712 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2026-10-09 20:29:15.714 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:15.714 [main] TwoPhaseLoad - Processing attribute `email` : value = test@example.com
+[DEBUG] 2026-10-09 20:29:15.715 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.715 [main] TwoPhaseLoad - Processing attribute `password` : value = test123
+[DEBUG] 2026-10-09 20:29:15.715 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.715 [main] TwoPhaseLoad - Processing attribute `username` : value = testuser
+[DEBUG] 2026-10-09 20:29:15.715 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.715 [main] TwoPhaseLoad - Processing attribute `vocabulary` : value = NOT NULL COLLECTION
+[DEBUG] 2026-10-09 20:29:15.715 [main] TwoPhaseLoad - Attribute (`vocabulary`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.715 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:15.716 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : fonik.app.entity.User#1
+[DEBUG] 2026-10-09 20:29:15.716 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#4]
+[DEBUG] 2026-10-09 20:29:15.716 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:15.716 [main] TwoPhaseLoad - Processing attribute `article` : value = der
+[DEBUG] 2026-10-09 20:29:15.716 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.716 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = dog
+[DEBUG] 2026-10-09 20:29:15.717 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.717 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Hundd
+[DEBUG] 2026-10-09 20:29:15.717 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.717 [main] TwoPhaseLoad - Processing attribute `plural` : value = Hunde
+[DEBUG] 2026-10-09 20:29:15.717 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.717 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:15.717 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.717 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:15.718 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#6]
+[DEBUG] 2026-10-09 20:29:15.718 [main] TwoPhaseLoad - Processing attribute `article` : value = die
+[DEBUG] 2026-10-09 20:29:15.718 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.718 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = cat
+[DEBUG] 2026-10-09 20:29:15.718 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.718 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Katzez
+[DEBUG] 2026-10-09 20:29:15.718 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.718 [main] TwoPhaseLoad - Processing attribute `plural` : value = Katzen
+[DEBUG] 2026-10-09 20:29:15.719 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.719 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:15.719 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:15.719 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#6]
+[DEBUG] 2026-10-09 20:29:15.723 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:16.203 [main] SQL - select vocabulary0_.id as id1_1_0_, vocabulary0_.article as article2_1_0_, vocabulary0_.english_meaning as english_3_1_0_, vocabulary0_.german_word as german_w4_1_0_, vocabulary0_.plural as plural5_1_0_, vocabulary0_.user_id as user_id6_1_0_, user1_.id as id1_0_1_, user1_.email as email2_0_1_, user1_.password as password3_0_1_, user1_.username as username4_0_1_ from vocabulary vocabulary0_ inner join users user1_ on vocabulary0_.user_id=user1_.id where vocabulary0_.id=?
+[DEBUG] 2026-10-09 20:29:16.211 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Processing attribute `article` : value = der
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = dog
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Hundd
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Processing attribute `plural` : value = Hunde
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:16.212 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.214 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:16.214 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:16.214 [main] TwoPhaseLoad - Processing attribute `email` : value = test@example.com
+[DEBUG] 2026-10-09 20:29:16.214 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.214 [main] TwoPhaseLoad - Processing attribute `password` : value = test123
+[DEBUG] 2026-10-09 20:29:16.214 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.215 [main] TwoPhaseLoad - Processing attribute `username` : value = testuser
+[DEBUG] 2026-10-09 20:29:16.215 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.215 [main] TwoPhaseLoad - Processing attribute `vocabulary` : value = NOT NULL COLLECTION
+[DEBUG] 2026-10-09 20:29:16.215 [main] TwoPhaseLoad - Attribute (`vocabulary`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.217 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:16.217 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : fonik.app.entity.Vocabulary#5
+[DEBUG] 2026-10-09 20:29:16.217 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:16.218 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2026-10-09 20:29:16.218 [main] TransactionImpl - begin
+[DEBUG] 2026-10-09 20:29:16.223 [main] EntityCopyObserverFactoryInitiator - Configured EntityCopyObserver strategy: disallow
+[DEBUG] 2026-10-09 20:29:16.247 [main] Loader - Static select for action ACTION_MERGE on entity fonik.app.entity.Vocabulary: select vocabulary0_.id as id1_1_0_, vocabulary0_.article as article2_1_0_, vocabulary0_.english_meaning as english_3_1_0_, vocabulary0_.german_word as german_w4_1_0_, vocabulary0_.plural as plural5_1_0_, vocabulary0_.user_id as user_id6_1_0_ from vocabulary vocabulary0_ where vocabulary0_.id=?
+[DEBUG] 2026-10-09 20:29:16.247 [main] Loader - Loading entity: [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:16.247 [main] SQL - select vocabulary0_.id as id1_1_0_, vocabulary0_.article as article2_1_0_, vocabulary0_.english_meaning as english_3_1_0_, vocabulary0_.german_word as german_w4_1_0_, vocabulary0_.plural as plural5_1_0_, vocabulary0_.user_id as user_id6_1_0_ from vocabulary vocabulary0_ where vocabulary0_.id=?
+[DEBUG] 2026-10-09 20:29:16.251 [main] Loader - Result set row: 0
+[DEBUG] 2026-10-09 20:29:16.252 [main] Loader - Result row: EntityKey[fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:16.252 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:16.253 [main] TwoPhaseLoad - Processing attribute `article` : value = der
+[DEBUG] 2026-10-09 20:29:16.253 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.253 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = dog
+[DEBUG] 2026-10-09 20:29:16.253 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.253 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Hundd
+[DEBUG] 2026-10-09 20:29:16.253 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.253 [main] TwoPhaseLoad - Processing attribute `plural` : value = Hunde
+[DEBUG] 2026-10-09 20:29:16.253 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.253 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:16.253 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.256 [main] Loader - Static select for action ACTION_MERGE on entity fonik.app.entity.User: select user0_.id as id1_0_1_, user0_.email as email2_0_1_, user0_.password as password3_0_1_, user0_.username as username4_0_1_, vocabulary1_.user_id as user_id6_1_3_, vocabulary1_.id as id1_1_3_, vocabulary1_.id as id1_1_0_, vocabulary1_.article as article2_1_0_, vocabulary1_.english_meaning as english_3_1_0_, vocabulary1_.german_word as german_w4_1_0_, vocabulary1_.plural as plural5_1_0_, vocabulary1_.user_id as user_id6_1_0_ from users user0_ left outer join vocabulary vocabulary1_ on user0_.id=vocabulary1_.user_id where user0_.id=?
+[DEBUG] 2026-10-09 20:29:16.256 [main] Loader - Loading entity: [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:16.256 [main] SQL - select user0_.id as id1_0_1_, user0_.email as email2_0_1_, user0_.password as password3_0_1_, user0_.username as username4_0_1_, vocabulary1_.user_id as user_id6_1_3_, vocabulary1_.id as id1_1_3_, vocabulary1_.id as id1_1_0_, vocabulary1_.article as article2_1_0_, vocabulary1_.english_meaning as english_3_1_0_, vocabulary1_.german_word as german_w4_1_0_, vocabulary1_.plural as plural5_1_0_, vocabulary1_.user_id as user_id6_1_0_ from users user0_ left outer join vocabulary vocabulary1_ on user0_.id=vocabulary1_.user_id where user0_.id=?
+[DEBUG] 2026-10-09 20:29:16.262 [main] Loader - Result set row: 0
+[DEBUG] 2026-10-09 20:29:16.262 [main] Loader - Result row: EntityKey[fonik.app.entity.Vocabulary#4], EntityKey[fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:16.263 [main] Loader - Found row of collection: [fonik.app.entity.User.vocabulary#1]
+[DEBUG] 2026-10-09 20:29:16.268 [main] Loader - Result set row: 1
+[DEBUG] 2026-10-09 20:29:16.268 [main] Loader - Result row: EntityKey[fonik.app.entity.Vocabulary#5], EntityKey[fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:16.269 [main] Loader - Found row of collection: [fonik.app.entity.User.vocabulary#1]
+[DEBUG] 2026-10-09 20:29:16.269 [main] Loader - Result set row: 2
+[DEBUG] 2026-10-09 20:29:16.269 [main] Loader - Result row: EntityKey[fonik.app.entity.Vocabulary#6], EntityKey[fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:16.270 [main] Loader - Found row of collection: [fonik.app.entity.User.vocabulary#1]
+[DEBUG] 2026-10-09 20:29:16.270 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#4]
+[DEBUG] 2026-10-09 20:29:16.270 [main] TwoPhaseLoad - Processing attribute `article` : value = das
+[DEBUG] 2026-10-09 20:29:16.270 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.271 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = house
+[DEBUG] 2026-10-09 20:29:16.271 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.271 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Haus
+[DEBUG] 2026-10-09 20:29:16.271 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.271 [main] TwoPhaseLoad - Processing attribute `plural` : value = Häuser
+[DEBUG] 2026-10-09 20:29:16.271 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.271 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:16.271 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.273 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#4]
+[DEBUG] 2026-10-09 20:29:16.273 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:16.273 [main] TwoPhaseLoad - Processing attribute `email` : value = test@example.com
+[DEBUG] 2026-10-09 20:29:16.273 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.274 [main] TwoPhaseLoad - Processing attribute `password` : value = test123
+[DEBUG] 2026-10-09 20:29:16.274 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.274 [main] TwoPhaseLoad - Processing attribute `username` : value = testuser
+[DEBUG] 2026-10-09 20:29:16.274 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.274 [main] TwoPhaseLoad - Processing attribute `vocabulary` : value = NOT NULL COLLECTION
+[DEBUG] 2026-10-09 20:29:16.274 [main] TwoPhaseLoad - Attribute (`vocabulary`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.275 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:16.275 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#6]
+[DEBUG] 2026-10-09 20:29:16.275 [main] TwoPhaseLoad - Processing attribute `article` : value = die
+[DEBUG] 2026-10-09 20:29:16.275 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.275 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = cat
+[DEBUG] 2026-10-09 20:29:16.275 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.275 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Katzez
+[DEBUG] 2026-10-09 20:29:16.275 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.276 [main] TwoPhaseLoad - Processing attribute `plural` : value = Katzen
+[DEBUG] 2026-10-09 20:29:16.276 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.276 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:16.276 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.276 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#6]
+[DEBUG] 2026-10-09 20:29:16.277 [main] CollectionLoadContext - 1 collections were found in result set for role: fonik.app.entity.User.vocabulary
+[DEBUG] 2026-10-09 20:29:16.277 [main] CollectionLoadContext - Collection fully initialized: [fonik.app.entity.User.vocabulary#1]
+[DEBUG] 2026-10-09 20:29:16.277 [main] CollectionLoadContext - 1 collections initialized for role: fonik.app.entity.User.vocabulary
+[DEBUG] 2026-10-09 20:29:16.278 [main] Loader - Done entity load
+[DEBUG] 2026-10-09 20:29:16.278 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:16.279 [main] Loader - Done entity load
+[DEBUG] 2026-10-09 20:29:16.280 [main] TransactionImpl - committing
+[DEBUG] 2026-10-09 20:29:16.280 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2026-10-09 20:29:16.285 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2026-10-09 20:29:16.296 [main] Collections - Collection found: [fonik.app.entity.User.vocabulary#1], was: [fonik.app.entity.User.vocabulary#1] (initialized)
+[DEBUG] 2026-10-09 20:29:16.296 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
+[DEBUG] 2026-10-09 20:29:16.296 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2026-10-09 20:29:16.297 [main] EntityPrinter - Listing entities:
+[DEBUG] 2026-10-09 20:29:16.297 [main] EntityPrinter - fonik.app.entity.Vocabulary{englishMeaning=house, plural=Häuser, germanWord=Haus, id=4, user=fonik.app.entity.User#1, article=das}
+[DEBUG] 2026-10-09 20:29:16.297 [main] EntityPrinter - fonik.app.entity.Vocabulary{englishMeaning=dog, plural=Hunde, germanWord=Hundd, id=5, user=fonik.app.entity.User#1, article=der}
+[DEBUG] 2026-10-09 20:29:16.297 [main] EntityPrinter - fonik.app.entity.Vocabulary{englishMeaning=cat, plural=Katzen, germanWord=Katzez, id=6, user=fonik.app.entity.User#1, article=die}
+[DEBUG] 2026-10-09 20:29:16.298 [main] EntityPrinter - fonik.app.entity.User{password=test123, vocabulary=[fonik.app.entity.Vocabulary#4, fonik.app.entity.Vocabulary#5, fonik.app.entity.Vocabulary#6], id=1, email=test@example.com, username=testuser}
+[DEBUG] 2026-10-09 20:29:16.299 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:16.300 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:16.302 [main] SQL - select vocabulary0_.id as id1_1_0_, vocabulary0_.article as article2_1_0_, vocabulary0_.english_meaning as english_3_1_0_, vocabulary0_.german_word as german_w4_1_0_, vocabulary0_.plural as plural5_1_0_, vocabulary0_.user_id as user_id6_1_0_, user1_.id as id1_0_1_, user1_.email as email2_0_1_, user1_.password as password3_0_1_, user1_.username as username4_0_1_ from vocabulary vocabulary0_ inner join users user1_ on vocabulary0_.user_id=user1_.id where vocabulary0_.id=?
+[DEBUG] 2026-10-09 20:29:16.306 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2026-10-09 20:29:16.307 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:16.307 [main] TwoPhaseLoad - Processing attribute `article` : value = der
+[DEBUG] 2026-10-09 20:29:16.307 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.307 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = dog
+[DEBUG] 2026-10-09 20:29:16.307 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.307 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Hundd
+[DEBUG] 2026-10-09 20:29:16.307 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.307 [main] TwoPhaseLoad - Processing attribute `plural` : value = Hunde
+[DEBUG] 2026-10-09 20:29:16.308 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.308 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:16.308 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.309 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#5]
+[DEBUG] 2026-10-09 20:29:16.309 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:16.309 [main] TwoPhaseLoad - Processing attribute `email` : value = test@example.com
+[DEBUG] 2026-10-09 20:29:16.309 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.309 [main] TwoPhaseLoad - Processing attribute `password` : value = test123
+[DEBUG] 2026-10-09 20:29:16.309 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.309 [main] TwoPhaseLoad - Processing attribute `username` : value = testuser
+[DEBUG] 2026-10-09 20:29:16.309 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.309 [main] TwoPhaseLoad - Processing attribute `vocabulary` : value = NOT NULL COLLECTION
+[DEBUG] 2026-10-09 20:29:16.310 [main] TwoPhaseLoad - Attribute (`vocabulary`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:16.310 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:16.310 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : fonik.app.entity.Vocabulary#5
+[DEBUG] 2026-10-09 20:29:16.310 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:17.679 [main] SQL - select vocabulary0_.id as id1_1_0_, vocabulary0_.article as article2_1_0_, vocabulary0_.english_meaning as english_3_1_0_, vocabulary0_.german_word as german_w4_1_0_, vocabulary0_.plural as plural5_1_0_, vocabulary0_.user_id as user_id6_1_0_, user1_.id as id1_0_1_, user1_.email as email2_0_1_, user1_.password as password3_0_1_, user1_.username as username4_0_1_ from vocabulary vocabulary0_ inner join users user1_ on vocabulary0_.user_id=user1_.id where vocabulary0_.id=?
+[DEBUG] 2026-10-09 20:29:17.687 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2026-10-09 20:29:17.687 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#4]
+[DEBUG] 2026-10-09 20:29:17.689 [main] TwoPhaseLoad - Processing attribute `article` : value = das
+[DEBUG] 2026-10-09 20:29:17.689 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.689 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = house
+[DEBUG] 2026-10-09 20:29:17.689 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.689 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Haus
+[DEBUG] 2026-10-09 20:29:17.689 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.689 [main] TwoPhaseLoad - Processing attribute `plural` : value = Häuser
+[DEBUG] 2026-10-09 20:29:17.690 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.690 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:17.690 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.690 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#4]
+[DEBUG] 2026-10-09 20:29:17.690 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:17.691 [main] TwoPhaseLoad - Processing attribute `email` : value = test@example.com
+[DEBUG] 2026-10-09 20:29:17.691 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.691 [main] TwoPhaseLoad - Processing attribute `password` : value = test123
+[DEBUG] 2026-10-09 20:29:17.691 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.691 [main] TwoPhaseLoad - Processing attribute `username` : value = testuser
+[DEBUG] 2026-10-09 20:29:17.691 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.691 [main] TwoPhaseLoad - Processing attribute `vocabulary` : value = NOT NULL COLLECTION
+[DEBUG] 2026-10-09 20:29:17.691 [main] TwoPhaseLoad - Attribute (`vocabulary`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.692 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:17.692 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : fonik.app.entity.Vocabulary#4
+[DEBUG] 2026-10-09 20:29:17.692 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:17.693 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2026-10-09 20:29:17.693 [main] TransactionImpl - begin
+[DEBUG] 2026-10-09 20:29:17.712 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2026-10-09 20:29:17.717 [main] SQL - insert into vocabulary (article, english_meaning, german_word, plural, user_id) values (?, ?, ?, ?, ?)
+[DEBUG] 2026-10-09 20:29:17.728 [main] IdentifierGeneratorHelper - Natively generated identity: 7
+[DEBUG] 2026-10-09 20:29:17.729 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2026-10-09 20:29:17.733 [main] TransactionImpl - committing
+[DEBUG] 2026-10-09 20:29:17.734 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2026-10-09 20:29:17.734 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2026-10-09 20:29:17.734 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2026-10-09 20:29:17.735 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2026-10-09 20:29:17.735 [main] EntityPrinter - Listing entities:
+[DEBUG] 2026-10-09 20:29:17.735 [main] EntityPrinter - fonik.app.entity.Vocabulary{englishMeaning=tree, plural=B�ume, germanWord=Baum, id=7, user=fonik.app.entity.User#1, article=der}
+[DEBUG] 2026-10-09 20:29:17.739 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:17.740 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2026-10-09 20:29:17.743 [main] SQL - select vocabulary0_.id as id1_1_0_, vocabulary0_.article as article2_1_0_, vocabulary0_.english_meaning as english_3_1_0_, vocabulary0_.german_word as german_w4_1_0_, vocabulary0_.plural as plural5_1_0_, vocabulary0_.user_id as user_id6_1_0_, user1_.id as id1_0_1_, user1_.email as email2_0_1_, user1_.password as password3_0_1_, user1_.username as username4_0_1_ from vocabulary vocabulary0_ inner join users user1_ on vocabulary0_.user_id=user1_.id where vocabulary0_.id=?
+[DEBUG] 2026-10-09 20:29:17.748 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2026-10-09 20:29:17.749 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.Vocabulary#7]
+[DEBUG] 2026-10-09 20:29:17.749 [main] TwoPhaseLoad - Processing attribute `article` : value = der
+[DEBUG] 2026-10-09 20:29:17.750 [main] TwoPhaseLoad - Attribute (`article`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.750 [main] TwoPhaseLoad - Processing attribute `englishMeaning` : value = tree
+[DEBUG] 2026-10-09 20:29:17.750 [main] TwoPhaseLoad - Attribute (`englishMeaning`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.750 [main] TwoPhaseLoad - Processing attribute `germanWord` : value = Baum
+[DEBUG] 2026-10-09 20:29:17.750 [main] TwoPhaseLoad - Attribute (`germanWord`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.750 [main] TwoPhaseLoad - Processing attribute `plural` : value = B�ume
+[DEBUG] 2026-10-09 20:29:17.750 [main] TwoPhaseLoad - Attribute (`plural`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.750 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2026-10-09 20:29:17.750 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.751 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.Vocabulary#7]
+[DEBUG] 2026-10-09 20:29:17.751 [main] TwoPhaseLoad - Resolving attributes for [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:17.751 [main] TwoPhaseLoad - Processing attribute `email` : value = test@example.com
+[DEBUG] 2026-10-09 20:29:17.751 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.751 [main] TwoPhaseLoad - Processing attribute `password` : value = test123
+[DEBUG] 2026-10-09 20:29:17.751 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.751 [main] TwoPhaseLoad - Processing attribute `username` : value = testuser
+[DEBUG] 2026-10-09 20:29:17.752 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.752 [main] TwoPhaseLoad - Processing attribute `vocabulary` : value = NOT NULL COLLECTION
+[DEBUG] 2026-10-09 20:29:17.752 [main] TwoPhaseLoad - Attribute (`vocabulary`)  - enhanced for lazy-loading? - false
+[DEBUG] 2026-10-09 20:29:17.752 [main] TwoPhaseLoad - Done materializing entity [fonik.app.entity.User#1]
+[DEBUG] 2026-10-09 20:29:17.752 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : fonik.app.entity.Vocabulary#7
+[DEBUG] 2026-10-09 20:29:17.753 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

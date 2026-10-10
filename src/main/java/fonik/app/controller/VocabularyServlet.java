@@ -16,6 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+
+
 @WebServlet("/vocabulary")
 public class VocabularyServlet extends HttpServlet {
 
@@ -40,13 +42,14 @@ public class VocabularyServlet extends HttpServlet {
 
         List<Vocabulary> vocabularyList = vocabularyDao.getAll();
 
-        List<User> userList = userDao.getAll();
+        List<User> users = userDao.getAll();
+        request.setAttribute("users", users);
 
         logger.debug("Vocabulary entries found: {}", vocabularyList.size());
-        logger.debug("User entries found: {}", userList.size());
+
 
         request.setAttribute("vocabularyList", vocabularyList);
-        request.setAttribute("userList", userList);
+
 
         RequestDispatcher dispatcher =
                 request.getRequestDispatcher("/vocabulary.jsp");

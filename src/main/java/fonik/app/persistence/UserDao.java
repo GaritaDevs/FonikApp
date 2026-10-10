@@ -25,29 +25,30 @@ public class UserDao {
 
     public User getById(int id) {
 
-        Session session = sessionFactory.openSession();
-        User user = session.get(User.class, id);
-        session.close();
-        return user;
+        try (Session session = sessionFactory.openSession()) {
+            return session.get(User.class, id);
+        }
     }
 
     public List<User> getAll() {
 
-        Session session = sessionFactory.openSession();
-        CriteriaQuery<User> query =
-                session.getCriteriaBuilder()
-                        .createQuery(User.class);
-        Root<User> root = query.from(User.class);
+        try (Session session = sessionFactory.openSession()) {
 
-        query.select(root);
+            CriteriaQuery<User> query =
+                    session.getCriteriaBuilder()
+                            .createQuery(User.class);
 
-        List<User> users =
-                session.createQuery(query).getResultList();
-        logger.debug("The list of Users entries: {}", users);
+            Root<User> root = query.from(User.class);
+            query.select(root);
 
-        session.close();
+            List<User> users =
+                    session.createQuery(query).getResultList();
 
-        return users;
+            logger.debug("Retrieved {} users", users.size());
+
+            return users;
+        }
     }
+
 }
 

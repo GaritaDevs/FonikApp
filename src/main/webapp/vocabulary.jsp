@@ -14,7 +14,14 @@
 
 <h1>German Learning Tracker</h1>
 
-<h2>Users</h2>
+<h2>User Information</h2>
+
+<c:forEach var="user" items="${users}">
+    <p>User ID: ${user.id}</p>
+    <p>Username: ${user.username}</p>
+    <hr>
+</c:forEach>
+
 
 <h2>My Vocabulary</h2>
 
