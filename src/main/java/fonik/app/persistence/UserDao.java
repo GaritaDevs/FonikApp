@@ -16,8 +16,6 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 
 
-
-
 public class UserDao {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
@@ -47,6 +45,27 @@ public class UserDao {
             logger.debug("Retrieved {} users", users.size());
 
             return users;
+        }
+    }
+
+    public void delete(User user) {
+
+        Session session = sessionFactory.openSession();
+        org.hibernate.Transaction transaction = session.beginTransaction();
+
+        try {
+            session.delete(user);
+            transaction.commit();
+
+            logger.debug("Deleted user with ID: {}", user.getId());
+
+        } catch (RuntimeException e) {
+            transaction.rollback();
+            logger.error("Error deleting user", e);
+            throw e;
+
+        } finally {
+            session.close();
         }
     }
 
