@@ -48,6 +48,29 @@ public class UserDao {
         }
     }
 
+    public int addUser(User user) {
+
+        Session session = sessionFactory.openSession();
+        org.hibernate.Transaction transaction = session.beginTransaction();
+
+        try {
+            session.persist(user);
+            transaction.commit();
+
+            logger.debug("Added user with ID: {}", user.getId());
+
+            return user.getId();
+
+        } catch (RuntimeException e) {
+            transaction.rollback();
+            logger.error("Error adding user", e);
+            throw e;
+
+        } finally {
+            session.close();
+        }
+    }
+
     public void delete(User user) {
 
         Session session = sessionFactory.openSession();

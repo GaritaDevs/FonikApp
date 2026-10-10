@@ -82,3 +82,10 @@
 [DEBUG] 2026-10-10 12:19:22.119 [main] UserDao - Retrieved 1 users
 [DEBUG] 2026-10-10 12:24:02.067 [main] UserDao - Deleted user with ID: 1
 [DEBUG] 2026-10-10 12:24:02.369 [main] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-10 12:40:18.986 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-10 12:40:19.486 [main] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-10 12:41:04.528 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-10 12:41:05.422 [main] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-10 12:42:17.351 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-10 12:42:17.845 [main] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-10 12:46:02.094 [main] UserDao - Added user with ID: 2

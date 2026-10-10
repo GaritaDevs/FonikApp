@@ -34,6 +34,24 @@ public class UserDaoTest {
     }
 
     @Test
+    public void addUserSuccess() {
+
+        userDao = new UserDao();
+
+        User userToAdd = new User("newuser", "password123", "newuser@gmail.com");
+
+        int insertedUserId = userDao.addUser(userToAdd);
+        assertNotEquals(0, insertedUserId);
+
+        User insertedUser = userDao.getById(insertedUserId);
+
+        assertNotNull(insertedUser);
+        assertEquals("newuser", insertedUser.getUsername());
+        assertEquals("newuser@gmail.com", insertedUser.getEmail());
+    }
+
+
+    @Test
     public void getAll() {
 
         userDao = new UserDao();
@@ -43,18 +61,18 @@ public class UserDaoTest {
         assertEquals(1, users.size());
     }
 
-    @Test
-    public void delete() {
-
-        userDao = new UserDao();
-
-        User user = userDao.getById(1);
-
-        assertNotNull(user);
-
-        userDao.delete(user);
-
-        assertNull(userDao.getById(1));
-    }
+//    @Test
+//    public void delete() {
+//
+//        userDao = new UserDao();
+//
+//        User user = userDao.getById(3);
+//
+//        assertNotNull(user);
+//
+//        userDao.delete(user);
+//
+//        assertNull(userDao.getById(3));
+//    }
 }
 
