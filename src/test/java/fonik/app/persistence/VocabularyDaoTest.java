@@ -1,6 +1,7 @@
 package fonik.app.persistence;
 
 import fonik.app.entity.Vocabulary;
+import fonik.app.entity.User;
 import fonik.app.util.Database;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
@@ -69,6 +70,24 @@ public class VocabularyDaoTest {
         vocabularyDao.delete(vocabulary);
         assertNull(vocabularyDao.getById(5));
 
+    }
+
+    @Test
+    public void deleteVocabularyDoesNotDeleteUser() {
+        vocabularyDao = new VocabularyDao();
+        UserDao userDao = new UserDao();
+
+
+        Vocabulary vocabulary = vocabularyDao.getById(5);
+        assertNotNull(vocabulary);
+
+
+        int userId = vocabulary.getUser().getId();
+        vocabularyDao.delete(vocabulary);
+
+
+        assertNull(vocabularyDao.getById(5));
+        assertNotNull(userDao.getById(userId));
     }
 
     @Test
