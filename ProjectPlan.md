@@ -72,6 +72,9 @@
 
 ## Week 7 — Checkpoint 2
 
+- **US-01:** As a user, I want to create an account so that I can securely access my personal vocabulary and learning progress.
+- **US-02:** As a registered user, I want to log in and log out so that I can access my account securely.
+
 ### Checkpoint 2 Requirements
 
 By the end of Week 7, the following must be completed:
@@ -85,12 +88,6 @@ By the end of Week 7, the following must be completed:
 * [ ] Log4J is implemented.
 * [ ] No `System.out.println()` statements remain.
 
-### Additional Tasks
-
-* Review all Checkpoint 2 requirements.
-* Fix any remaining database or DAO issues.
-* Verify that all tests pass.
-* Commit and push the completed work to GitHub.
 
 ---
 

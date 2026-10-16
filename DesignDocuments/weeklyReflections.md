@@ -15,25 +15,75 @@ and I created the SessionFactoryProvider class inside my persistence folder to u
 
 
 ## Week 6
-- Date:
-- Hours
+- Date: 10/07/2026
+- Hours: 15
 
-Text: 
+Text: Ok this week was a lot of work, I rewatched almost all the videos for hibernate, the DAOs, the UnitTest. So I can implement everything in the project
+I created my database structure and the first two tables, my logs, hibernate, I built my userDao, vocabularyDao, my DaoTests, my first jsp to test my tomcat connection. 
 
 ## Week 7
-- Date:
-- Hours
+- Date: 10/15/2026
+- Hours 7
 
-Text: 
+Text: I fixed some of the bugs I had on my log4j2 like the filepath and the file name. I added two of the tests that were missing, one that checks that when the vocabulary is deleted it doesn't delete the user and another one
+that when the user is deleted it deletes all the vocabulary for that userId. I also deployed my app to AWS. And I will work on cognito
 
 
 ## Week 8
-- Date:
+- Date: 
 - Hours
 
 Text: 
 
 ## Week 9
+- Date:
+- Hours
+
+Text: 
+
+## Week 10
+- Date:
+- Hours
+
+Text: 
+
+
+## Week 11
+- Date:
+- Hours
+
+Text: 
+
+
+## Week 12
+- Date:
+- Hours
+
+Text: 
+
+
+## Week 13
+- Date:
+- Hours
+
+Text: 
+
+
+## Week 14
+- Date:
+- Hours
+
+Text: 
+
+
+## Week 15
+- Date:
+- Hours
+
+Text: 
+
+
+## Week 16
 - Date:
 - Hours
 
