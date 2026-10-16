@@ -44,5 +44,6 @@ build/
 
 ### Remember to git ignore sentisitve file and log files ###
 
+## ignore cognito
 src/main/resources/cognito.properties
 cognito.properties
