@@ -9,11 +9,9 @@ import java.sql.Statement;
 import java.util.Properties;
 
 /**
- * Provides access to the database
- * Created on 8/31/16.
+
  *
- * @author pwaite
- * @author Alex M - Fall 2019 - added multi-line sql capability
+ * @author egarita
  */
 public class Database implements PropertiesLoader { // 2. Implement the interface
 

@@ -9,6 +9,10 @@ public class Keys{
     @JsonProperty("keys")
     private List<KeysItem> keys;
 
+    /**
+     * Keys
+     * @return keys
+     */
     public List<KeysItem> getKeys(){
         return keys;
     }

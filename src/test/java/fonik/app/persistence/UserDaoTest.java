@@ -12,16 +12,28 @@ import java.util.List;
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * The type User dao test.
+ */
 public class UserDaoTest {
 
+    /**
+     * The User dao.
+     */
     UserDao userDao;
 
+    /**
+     * Sets up.
+     */
     @BeforeEach
     public void setUp() {
         Database database = Database.getInstance();
         database.runSQL("cleanDB.sql");
     }
 
+    /**
+     * Gets by id.
+     */
     @Test
     public void getById() {
 
@@ -34,6 +46,9 @@ public class UserDaoTest {
         assertEquals("testuser", user.getUsername());
     }
 
+    /**
+     * Add user success.
+     */
     @Test
     public void addUserSuccess() {
 
@@ -52,6 +67,9 @@ public class UserDaoTest {
     }
 
 
+    /**
+     * Gets all.
+     */
     @Test
     public void getAll() {
 
@@ -60,6 +78,9 @@ public class UserDaoTest {
         assertEquals(1, users.size());
     }
 
+    /**
+     * Delete.
+     */
     @Test
     public void delete() {
 
@@ -70,6 +91,9 @@ public class UserDaoTest {
         assertNull(userDao.getById(1));
     }
 
+    /**
+     * Delete user deletes vocabulary.
+     */
     @Test
     public void deleteUserDeletesVocabulary() {
         userDao = new UserDao();

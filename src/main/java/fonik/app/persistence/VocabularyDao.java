@@ -13,9 +13,15 @@ import javax.persistence.criteria.Root;
 
 import java.util.List;
 
+/**
+ * The type Vocabulary dao.
+ */
 public class VocabularyDao {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
@@ -105,12 +111,12 @@ public class VocabularyDao {
 
     /**
      * Get vocabulary by property using an exact match.
-     *
+     * <p>
      * Example:
      * getByPropertyEqual("germanWord", "Haus")
      *
      * @param propertyName property to search
-     * @param value value to search for
+     * @param value        value to search for
      * @return matching vocabulary entries
      */
     public List<Vocabulary> getByPropertyEqual(
@@ -146,12 +152,12 @@ public class VocabularyDao {
 
     /**
      * Get vocabulary by property using a partial match.
-     *
+     * <p>
      * Example:
      * getByPropertyLike("germanWord", "Ha")
      *
      * @param propertyName property to search
-     * @param value value to search for
+     * @param value        value to search for
      * @return matching vocabulary entries
      */
     public List<Vocabulary> getByPropertyLike(

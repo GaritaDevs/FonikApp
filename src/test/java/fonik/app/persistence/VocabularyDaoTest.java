@@ -1,9 +1,7 @@
 package fonik.app.persistence;
 
 import fonik.app.entity.Vocabulary;
-import fonik.app.entity.User;
 import fonik.app.util.Database;
-import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,16 +11,28 @@ import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
+/**
+ * The type Vocabulary dao test.
+ */
 public class VocabularyDaoTest {
 
+    /**
+     * The Vocabulary dao.
+     */
     VocabularyDao vocabularyDao;
 
+    /**
+     * Sets up.
+     */
     @BeforeEach
     public void setUp() {
         Database database = Database.getInstance();
         database.runSQL("cleanDB.sql");
     }
 
+    /**
+     * Gets by id.
+     */
     @Test
     public void getById() {
 
@@ -34,6 +44,9 @@ public class VocabularyDaoTest {
 
     }
 
+    /**
+     * Insert success.
+     */
     @Test
     public void insertSuccess() {
         vocabularyDao = new VocabularyDao();
@@ -49,6 +62,9 @@ public class VocabularyDaoTest {
         assertEquals("Baum", insertedVocabulary.getGermanWord());
     }
 
+    /**
+     * Update.
+     */
     @Test
     public void update() {
 
@@ -61,7 +77,9 @@ public class VocabularyDaoTest {
     }
 
 
-
+    /**
+     * Delete.
+     */
     @Test
     public void delete() {
 
@@ -72,6 +90,9 @@ public class VocabularyDaoTest {
 
     }
 
+    /**
+     * Delete vocabulary does not delete user.
+     */
     @Test
     public void deleteVocabularyDoesNotDeleteUser() {
         vocabularyDao = new VocabularyDao();
@@ -90,6 +111,9 @@ public class VocabularyDaoTest {
         assertNotNull(userDao.getById(userId));
     }
 
+    /**
+     * Gets all.
+     */
     @Test
     public void getAll() {
         vocabularyDao = new VocabularyDao();
@@ -97,6 +121,9 @@ public class VocabularyDaoTest {
         assertEquals(3, vocabulary.size());
     }
 
+    /**
+     * Gets by property equal.
+     */
     @Test
     public void getByPropertyEqual() {
 
@@ -109,6 +136,9 @@ public class VocabularyDaoTest {
 
     }
 
+    /**
+     * Gets by property like.
+     */
     @Test
     void getByPropertyLike() {
         vocabularyDao = new VocabularyDao();

@@ -28,7 +28,6 @@
 * Create Hibernate.xml
 
 
-
 ---
 
 ## Week 6 — Database Relationships and DAO Testing
@@ -36,7 +35,7 @@
 ## Goal
 Finish and verify the DAO functionality and unit tests for the `User` and `Vocabulary` entities, including their relationship.
 
-## User Story US-04 — Manage User Accounts
+## User Story US — Manage User Accounts
 
 As a German learner, I want my account information to be saved in the database so that the application can identify my account.
 
@@ -50,7 +49,7 @@ As a German learner, I want my account information to be saved in the database s
 - [ ] Run all `UserDaoTest` tests and fix any failures.
 
 
-## User Story US-05 — Manage Vocabulary Entries
+## User Story US — Manage Vocabulary Entries
 
 As a German learner, I want to save, view, update, and delete vocabulary entries so that I can maintain my personal German vocabulary list.
 
@@ -62,7 +61,7 @@ As a German learner, I want to save, view, update, and delete vocabulary entries
 - [ ] Finish the test for retrieving vocabulary by property.
 - [ ] Run all `VocabularyDaoTest` tests and fix any failures.
 
-## User Story US-06 — Associate Vocabulary with a User
+## User Story US — Associate Vocabulary with a User
 
 As a German learner, I want each vocabulary entry to be associated with its owner so that the application can manage vocabulary belonging to individual users.
 
@@ -73,7 +72,7 @@ As a German learner, I want each vocabulary entry to be associated with its owne
 - [ ] Verify that `User` and `Vocabulary` have the correct Hibernate relationship mappings.
 - [ ] Fix any database or Hibernate errors found during testing.
 
-## User Story US-07 — Log Application Activity
+## User Story US — Log Application Activity
 
 As a developer, I want database operations to use Log4J logging so that I can troubleshoot problems without using `System.out.println()`.
 
@@ -91,7 +90,7 @@ Deploy the German Learning Tracker to AWS Elastic Beanstalk and integrate Amazon
 
 ---
 
-## User Story US-01 — User Registration
+## User Story US — User Registration
 
 As a user, I want to create an account so that I can securely access my personal vocabulary and learning progress.
 
@@ -107,7 +106,7 @@ As a user, I want to create an account so that I can securely access my personal
 - [ ] Handle registration errors, such as an existing email or an invalid password.
 - [ ] Test creating a new account.
 
-## User Story US-02 — User Login and Logout
+## User Story US — User Login and Logout
 
 As a registered user, I want to log in and log out so that I can access my account securely.
 
@@ -138,7 +137,7 @@ As a registered user, I want to log in and log out so that I can access my accou
 
 ---
 
-## User Story US-07 — View Saved Vocabulary
+## User Story US — View Saved Vocabulary
 
 As a user, I want to view my saved vocabulary so that I can review the words I have learned.
 
@@ -159,7 +158,7 @@ Test the German Learning Tracker using SoapUI, verify the current application fu
 
 ---
 
-## User Story US-01 — User Registration
+## User Story US — User Registration
 
 As a user, I want to create an account so that I can securely access my personal vocabulary and learning progress.
 
@@ -172,7 +171,7 @@ As a user, I want to create an account so that I can securely access my personal
 - [ ] Check whether understandable error messages are displayed.
 - [ ] Record any registration issues that need fixing.
 
-## User Story US-02 — User Login and Logout
+## User Story US — User Login and Logout
 
 As a registered user, I want to log in and log out so that I can access my account securely.
 
@@ -190,7 +189,7 @@ As a registered user, I want to log in and log out so that I can access my accou
 ## Week 9 — Application Testing and Requirements Audit
 
 
-## User Story US-07 — View Saved Vocabulary
+## User Story US — View Saved Vocabulary
 
 As a user, I want to view my saved vocabulary so that I can review the words I have learned.
 
@@ -240,7 +239,7 @@ Select and test a German dictionary API, integrate it into the Java application,
 
 ---
 
-## User Story US-15 — Search German Words Using a Dictionary API
+## User Story US — Search German Words Using a Dictionary API
 
 As a user, I want to search for German words using a dictionary API so that I can find meanings and grammatical information without entering everything manually.
 
@@ -259,7 +258,7 @@ As a user, I want to search for German words using a dictionary API so that I ca
 - [ ] Handle API errors and missing results.
 - [ ] Test the Java integration, not just the request in Postman.
 
-## User Story US-16 — Retrieve Articles and Plural Forms
+## User Story US — Retrieve Articles and Plural Forms
 
 As a user, I want to retrieve German noun articles and plural forms from an external service when available so that I can save vocabulary more efficiently.
 
@@ -276,7 +275,7 @@ As a user, I want to retrieve German noun articles and plural forms from an exte
 
 # Week 11 — Dictionary API Integration and Application Improvements
 
-## User Story US-03 — Add German Words and English Meanings
+## User Story US — Add German Words and English Meanings
 
 As a user, I want to add German words with their English meanings so that I can build my own vocabulary list.
 

@@ -16,11 +16,23 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 
 
+/**
+ * The type User dao.
+ */
 public class UserDao {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
+    /**
+     * Gets by id.
+     *
+     * @param id the id
+     * @return the by id
+     */
     public User getById(int id) {
 
         try (Session session = sessionFactory.openSession()) {
@@ -28,6 +40,11 @@ public class UserDao {
         }
     }
 
+    /**
+     * Gets all.
+     *
+     * @return the all
+     */
     public List<User> getAll() {
 
         try (Session session = sessionFactory.openSession()) {
@@ -48,6 +65,12 @@ public class UserDao {
         }
     }
 
+    /**
+     * Add user int.
+     *
+     * @param user the user
+     * @return the int
+     */
     public int addUser(User user) {
 
         Session session = sessionFactory.openSession();
@@ -71,6 +94,11 @@ public class UserDao {
         }
     }
 
+    /**
+     * Delete.
+     *
+     * @param user the user
+     */
     public void delete(User user) {
 
         Session session = sessionFactory.openSession();

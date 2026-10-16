@@ -1,8 +1,4 @@
 package fonik.app.auth;
-/*
-// Copyright 2013-2016 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-// SPDX-License-Identifier: MIT-0
- */
 
 
 import java.util.Base64;
