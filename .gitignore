@@ -4,7 +4,6 @@ target/
 !**/src/test/**/target/
 .kotlin
 
-/src/main/resources/cognito.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -44,3 +43,6 @@ build/
 .DS_Store
 
 ### Remember to git ignore sentisitve file and log files ###
+
+src/main/resources/cognito.properties
+cognito.properties
