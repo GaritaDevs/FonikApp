@@ -448,3 +448,39 @@
 [DEBUG] 2026-10-20 22:57:20.714 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@4b07cad0, fonik.app.entity.Vocabulary@507049f2, fonik.app.entity.Vocabulary@4e94669c]
 [DEBUG] 2026-10-20 22:57:21.311 [main] VocabularyDao - Searching for vocabulary with germanWord like H
 [DEBUG] 2026-10-20 22:57:21.945 [main] VocabularyDao - Searching for vocabulary with germanWord = Haus
+[DEBUG] 2026-10-22 16:20:15.107 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@1c68d0db, fonik.app.entity.Vocabulary@9be7319, fonik.app.entity.Vocabulary@91a2543]
+[DEBUG] 2026-10-22 16:20:15.175 [main] UserDao - Deleted user with ID: 1
+[DEBUG] 2026-10-22 16:20:15.181 [main] VocabularyDao - The list of vocabulary entries: []
+[DEBUG] 2026-10-22 16:20:15.378 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-22 16:20:15.585 [main] UserDao - Deleted user with ID: 1
+[DEBUG] 2026-10-22 16:20:15.769 [main] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-22 16:20:16.369 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@4b07cad0, fonik.app.entity.Vocabulary@507049f2, fonik.app.entity.Vocabulary@4e94669c]
+[DEBUG] 2026-10-22 16:20:16.712 [main] VocabularyDao - Searching for vocabulary with germanWord like H
+[DEBUG] 2026-10-22 16:20:17.047 [main] VocabularyDao - Searching for vocabulary with germanWord = Haus
+[DEBUG] 2026-10-22 16:27:09.843 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@1c68d0db, fonik.app.entity.Vocabulary@9be7319, fonik.app.entity.Vocabulary@91a2543]
+[DEBUG] 2026-10-22 16:27:09.901 [main] UserDao - Deleted user with ID: 1
+[DEBUG] 2026-10-22 16:27:09.910 [main] VocabularyDao - The list of vocabulary entries: []
+[DEBUG] 2026-10-22 16:27:10.123 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-22 16:27:10.303 [main] UserDao - Deleted user with ID: 1
+[DEBUG] 2026-10-22 16:27:10.463 [main] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-22 16:27:10.944 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@4b07cad0, fonik.app.entity.Vocabulary@507049f2, fonik.app.entity.Vocabulary@4e94669c]
+[DEBUG] 2026-10-22 16:27:11.234 [main] VocabularyDao - Searching for vocabulary with germanWord like H
+[DEBUG] 2026-10-22 16:27:11.520 [main] VocabularyDao - Searching for vocabulary with germanWord = Haus
+[DEBUG] 2026-10-22 16:27:29.923 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@1c68d0db, fonik.app.entity.Vocabulary@9be7319, fonik.app.entity.Vocabulary@91a2543]
+[DEBUG] 2026-10-22 16:27:30.025 [main] UserDao - Deleted user with ID: 1
+[DEBUG] 2026-10-22 16:27:30.033 [main] VocabularyDao - The list of vocabulary entries: []
+[DEBUG] 2026-10-22 16:27:30.323 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-22 16:27:30.583 [main] UserDao - Deleted user with ID: 1
+[DEBUG] 2026-10-22 16:27:30.825 [main] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-22 16:27:31.594 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@4b07cad0, fonik.app.entity.Vocabulary@507049f2, fonik.app.entity.Vocabulary@4e94669c]
+[DEBUG] 2026-10-22 16:27:32.124 [main] VocabularyDao - Searching for vocabulary with germanWord like H
+[DEBUG] 2026-10-22 16:27:32.672 [main] VocabularyDao - Searching for vocabulary with germanWord = Haus
+[DEBUG] 2026-10-22 16:31:43.077 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@1c68d0db, fonik.app.entity.Vocabulary@9be7319, fonik.app.entity.Vocabulary@91a2543]
+[DEBUG] 2026-10-22 16:31:43.165 [main] UserDao - Deleted user with ID: 1
+[DEBUG] 2026-10-22 16:31:43.174 [main] VocabularyDao - The list of vocabulary entries: []
+[DEBUG] 2026-10-22 16:31:43.434 [main] UserDao - Added user with ID: 2
+[DEBUG] 2026-10-22 16:31:43.682 [main] UserDao - Deleted user with ID: 1
+[DEBUG] 2026-10-22 16:31:43.900 [main] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-22 16:31:44.681 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@4b07cad0, fonik.app.entity.Vocabulary@507049f2, fonik.app.entity.Vocabulary@4e94669c]
+[DEBUG] 2026-10-22 16:31:45.189 [main] VocabularyDao - Searching for vocabulary with germanWord like H
+[DEBUG] 2026-10-22 16:31:45.662 [main] VocabularyDao - Searching for vocabulary with germanWord = Haus
