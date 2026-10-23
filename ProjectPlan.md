@@ -40,13 +40,13 @@ Finish and verify the DAO functionality and unit tests for the `User` and `Vocab
 As a German learner, I want my account information to be saved in the database so that the application can identify my account.
 
 ### Tasks
-- [ ] Create `addUserSuccess()` in `UserDaoTest.java`.
-- [ ] Run the test and verify that a new user is saved in the database.
-- [ ] Verify that the new user can be retrieved using its generated ID.
-- [ ] Create a test for retrieving a user by ID.
-- [ ] Create a test for retrieving all users.
-- [ ] Create a test for deleting a user.
-- [ ] Run all `UserDaoTest` tests and fix any failures.
+- [X] Create `addUserSuccess()` in `UserDaoTest.java`.
+- [X] Run the test and verify that a new user is saved in the database.
+- [X] Verify that the new user can be retrieved using its generated ID.
+- [X] Create a test for retrieving a user by ID.
+- [X] Create a test for retrieving all users.
+- [X] Create a test for deleting a user.
+- [X] Run all `UserDaoTest` tests and fix any failures.
 
 
 ## User Story US — Manage Vocabulary Entries
@@ -54,33 +54,33 @@ As a German learner, I want my account information to be saved in the database s
 As a German learner, I want to save, view, update, and delete vocabulary entries so that I can maintain my personal German vocabulary list.
 
 ### Tasks
-- [ ] Finish the test for retrieving vocabulary by ID.
-- [ ] Run the vocabulary insertion test and verify the new entry is saved.
-- [ ] Run the vocabulary update test and verify the changes persist.
-- [ ] Run the vocabulary deletion test and verify the entry no longer exists.
-- [ ] Finish the test for retrieving vocabulary by property.
-- [ ] Run all `VocabularyDaoTest` tests and fix any failures.
+- [X] Finish the test for retrieving vocabulary by ID.
+- [X] Run the vocabulary insertion test and verify the new entry is saved.
+- [X] Run the vocabulary update test and verify the changes persist.
+- [X] Run the vocabulary deletion test and verify the entry no longer exists.
+- [X] Finish the test for retrieving vocabulary by property.
+- [X] Run all `VocabularyDaoTest` tests and fix any failures.
 
 ## User Story US — Associate Vocabulary with a User
 
 As a German learner, I want each vocabulary entry to be associated with its owner so that the application can manage vocabulary belonging to individual users.
 
 ### Tasks
-- [ ] Create a test verifying that deleting a user also deletes their vocabulary entries.
-- [ ] Create a test verifying that deleting a vocabulary entry does not delete its owner.
-- [ ] Run both relationship tests and verify the expected results.
-- [ ] Verify that `User` and `Vocabulary` have the correct Hibernate relationship mappings.
-- [ ] Fix any database or Hibernate errors found during testing.
+- [X] Create a test verifying that deleting a user also deletes their vocabulary entries.
+- [X] Create a test verifying that deleting a vocabulary entry does not delete its owner.
+- [X] Run both relationship tests and verify the expected results.
+- [X] Verify that `User` and `Vocabulary` have the correct Hibernate relationship mappings.
+- [X] Fix any database or Hibernate errors found during testing.
 
 ## User Story US — Log Application Activity
 
 As a developer, I want database operations to use Log4J logging so that I can troubleshoot problems without using `System.out.println()`.
 
 ### Tasks
-- [ ] Check that `UserDao` uses Log4J for relevant database operations.
-- [ ] Check that `VocabularyDao` uses Log4J for relevant database operations.
-- [ ] Remove any remaining `System.out.println()` statements from the relevant DAO code.
-- [ ] Run the DAO tests and confirm that logging works.
+- [X] Check that `UserDao` uses Log4J for relevant database operations.
+- [X] Check that `VocabularyDao` uses Log4J for relevant database operations.
+- [X] Remove any remaining `System.out.println()` statements.
+- [X] Run the DAO tests and confirm that logging works.
 
 ## Week 7 — AWS Elastic Beanstalk Deployment and Amazon Cognito Authentication
 
@@ -96,15 +96,15 @@ As a user, I want to create an account so that I can securely access my personal
 
 ### Tasks
 
-- [ ] Create an Amazon Cognito User Pool.
-- [ ] Configure the required sign-up fields, such as email and password.
-- [ ] Configure email verification if required.
-- [ ] Configure the Cognito app client for the application.
-- [ ] Review the Cognito settings and identify the information the Java application needs.
-- [ ] Implement the registration flow using Cognito.
-- [ ] Display a confirmation message after successful registration.
-- [ ] Handle registration errors, such as an existing email or an invalid password.
-- [ ] Test creating a new account.
+- [X] Create an Amazon Cognito User Pool.
+- [X] Configure the required sign-up fields, such as email and password.
+- [X] Configure email verification if required when you are singing up.
+- [X] Configure the Cognito app client for the application.
+- [X] Review the Cognito settings and identify the information the Java application needs.
+- [X] Implement the registration flow using Cognito.
+- [X] Display a confirmation message after successful registration.
+- [X] Handle registration errors, such as an existing email or an invalid password.
+- [X] Test creating a new account.
 
 ## User Story US — User Login and Logout
 
@@ -112,13 +112,8 @@ As a registered user, I want to log in and log out so that I can access my accou
 
 ### Tasks
 
-- [ ] Create a login page for the application.
-- [ ] Connect the login flow to Amazon Cognito.
-- [ ] Handle successful login and invalid credentials.
-- [ ] Establish an authenticated session for the signed-in user.
-- [ ] Implement logout functionality.
-- [ ] Verify that logging out ends the user's application session.
-- [ ] Test login, invalid login, and logout.
+- [X] Connect the login flow to Amazon Cognito.
+- [X] Handle successful login and invalid credentials.
 
 ---
 
@@ -126,14 +121,14 @@ As a registered user, I want to log in and log out so that I can access my accou
 
 ### Tasks
 
-- [ ] Confirm that the application runs locally on Tomcat 9.
-- [ ] Create or configure an AWS Elastic Beanstalk environment.
-- [ ] Select the Tomcat 9 platform with Amazon Corretto 11.
-- [ ] Deploy the WAR file to Elastic Beanstalk.
-- [ ] Configure the environment variables and settings required by the application.
-- [ ] Configure database connectivity for the deployed application.
-- [ ] Open the deployed application URL and verify that the application starts.
-- [ ] Review application logs and fix deployment errors.
+- [X] Confirm that the application runs locally on Tomcat 9.
+- [X] Create or configure an AWS Elastic Beanstalk environment.
+- [X] Select the Tomcat 9 platform with Amazon Corretto 11.
+- [X] Deploy the WAR file to Elastic Beanstalk.
+- [X] Configure the environment variables and settings required by the application.
+- [X] Configure database connectivity for the deployed application.
+- [X] Open the deployed application URL and verify that the application starts.
+- [X] Review application logs and fix deployment errors.
 
 ---
 
@@ -143,18 +138,21 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 
 ### Tasks
 
-- [ ] Verify that the deployed vocabulary page displays database records.
-- [ ] Confirm that the Servlet retrieves vocabulary from the database and forwards it to the JSP.
-- [ ] Test the vocabulary page in the AWS environment.
-- [ ] Fix any database connection or display errors.
+- [X] Create base JSP
+- [X] Create VocabularyDao
+- [X] Verify that the deployed vocabulary page displays database records.
+- [X] Create Servlet
+- [X] Confirm that the Servlet retrieves vocabulary from the database and forwards it to the JSP.
+- [X] Test the vocabulary page in the AWS environment.
+- [X] Fix any database connection or display errors.
 
 ---
 
-## Week 8 — Application Testing and Requirements Audit
+## Week 8 — Cognito On BeanStalk
 
 ## Goal
 
-Test the German Learning Tracker using SoapUI, verify the current application functionality, and identify missing requirements before adding more features.
+Connect Cognito with Beanstalk and create the first user and test it
 
 ---
 
@@ -164,29 +162,28 @@ As a user, I want to create an account so that I can securely access my personal
 
 ### Tasks
 
-- [ ] Test registration with a new account in Amazon Cognito.
-- [ ] Test registration with an account that already exists.
-- [ ] Test invalid or incomplete registration information.
-- [ ] Verify email confirmation if enabled.
-- [ ] Check whether understandable error messages are displayed.
-- [ ] Record any registration issues that need fixing.
-
-## User Story US — User Login and Logout
-
-As a registered user, I want to log in and log out so that I can access my account securely.
-
-### Tasks
-
-- [ ] Test login with valid credentials.
-- [ ] Test login with an incorrect password.
-- [ ] Test access to protected pages while logged out.
-- [ ] Test logout.
-- [ ] Attempt to revisit a protected page after logout.
-- [ ] Verify whether the application identifies the correct signed-in user.
-- [ ] Record authentication problems.
+- [X] Create certificates.
+- [X] Set up file structure and download the config files.
+- [X] Add the certificates to the https-instance.congif
+- [X] Add the right link in cognito and also in my cognito.properties file
+- [X] Change proxy to Apache
+- [X] Test the cognito works on Beanstalk
 
 
-## Week 9 — Application Testing and Requirements Audit
+## Week 9 - CheckPoint 3
+
+## Tasks
+
+- [ ] 
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+## Week 10 — Application Testing and Requirements Audit
 
 
 ## User Story US — View Saved Vocabulary
@@ -214,24 +211,9 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 - [ ] If REST endpoints already exist, test the available requests.
 - [ ] Save screenshots or test notes as evidence.
 
-**Note:** Do not create fake endpoints just for testing. If the application currently uses JSP pages and Servlets, test those routes first and decide whether a REST endpoint is necessary.
-
-## Requirements Audit
-
-### Tasks
-
-- [ ] Review the original user stories and mark each as complete, incomplete, or not started.
-- [ ] Verify that UserDao and VocabularyDao support the required CRUD operations.
-- [ ] Review JUnit coverage for DAO operations and user-vocabulary relationships.
-- [ ] Verify that Log4J is used instead of `System.out.println`.
-- [ ] Check the AWS deployment and database connection.
-- [ ] Verify that the deployed application URL is added to `IndividualProjects.md`.
-- [ ] Review the grammar and flashcard requirements.
-- [ ] Identify the most important unfinished requirements for Week 11.
-
 ---
 
-# Week 10 — Dictionary API Integration and Application Improvements
+# Week 11 — Dictionary API Integration and Application Improvements
 
 ## Goal
 
@@ -245,18 +227,17 @@ As a user, I want to search for German words using a dictionary API so that I ca
 
 ### Tasks
 
+
 - [ ] Research dictionary APIs that support German vocabulary.
 - [ ] Select an API that provides useful information for the project.
+- [ ] Create JSP with form to enter words
+- [ ] Create DAO and unit tests 
 - [ ] Review its documentation, request format, response format, and usage limits.
 - [ ] Test a valid German word using Postman.
 - [ ] Test a word that is not found.
 - [ ] Test missing parameters or invalid requests.
 - [ ] Identify the response fields needed by the application.
-- [ ] Implement a Java service class that sends requests to the selected API.
-- [ ] Parse the API response and retrieve the relevant information.
-- [ ] Display the returned information in the application.
-- [ ] Handle API errors and missing results.
-- [ ] Test the Java integration, not just the request in Postman.
+
 
 ## User Story US — Retrieve Articles and Plural Forms
 
@@ -271,9 +252,10 @@ As a user, I want to retrieve German noun articles and plural forms from an exte
 - [ ] Allow users to enter missing information manually.
 - [ ] Document any limitations of the selected API.
 
+
 ---
 
-# Week 11 — Dictionary API Integration and Application Improvements
+# Week 12 — Dictionary API Integration, Application Improvements and styling
 
 ## User Story US — Add German Words and English Meanings
 
@@ -289,7 +271,7 @@ As a user, I want to add German words with their English meanings so that I can 
 - [ ] Verify that the entry is associated with the correct user.
 - [ ] Test saving a word returned by the API.
 
-## Fixes from the Week 10 Audit
+## Week 13 - Flash Cards and more styling
 
 ### Tasks
 
@@ -302,4 +284,22 @@ As a user, I want to add German words with their English meanings so that I can 
 
 
 
-  
+## Week 13
+
+### Tasks
+
+-[ ]
+-[ ]
+-[ ]
+-[ ]
+-[ ]
+-[ ]
+-[ ]
+-[ ]
+
+
+## Week 14
+
+## Tasks
+
+- [ ] Create project presentation 

@@ -9,7 +9,6 @@ import org.apache.logging.log4j.Logger;
 
 
 import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 
 

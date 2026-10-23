@@ -30,10 +30,12 @@ that when the user is deleted it deletes all the vocabulary for that userId. I a
 
 
 ## Week 8
-- Date: 
-- Hours
+- Date: 10/22/2026
+- Hours: 10
 
-Text: 
+Text: I created my Beanstalk environment, I tested on my local machine and it worked. I also used Cognito to manage my log-in and sing-ups for my users 
+The hard part was to put both together it took me a while to figure that out that the proxy was not saved when I made the change. I have my cognito working On beanstalk. 
+Now I am ready to work in the next task.
 
 ## Week 9
 - Date:
