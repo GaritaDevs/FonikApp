@@ -32,9 +32,6 @@
 
 ## Week 6 — Database Relationships and DAO Testing
 
-## Goal
-Finish and verify the DAO functionality and unit tests for the `User` and `Vocabulary` entities, including their relationship.
-
 ## User Story US — Manage User Accounts
 
 As a German learner, I want my account information to be saved in the database so that the application can identify my account.
@@ -83,12 +80,6 @@ As a developer, I want database operations to use Log4J logging so that I can tr
 - [X] Run the DAO tests and confirm that logging works.
 
 ## Week 7 — AWS Elastic Beanstalk Deployment and Amazon Cognito Authentication
-
-## Goal
-
-Deploy the German Learning Tracker to AWS Elastic Beanstalk and integrate Amazon Cognito to manage user registration, login, and logout.
-
----
 
 ## User Story US — User Registration
 
@@ -150,12 +141,6 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 
 ## Week 8 — Cognito On BeanStalk
 
-## Goal
-
-Connect Cognito with Beanstalk and create the first user and test it
-
----
-
 ## User Story US — User Registration
 
 As a user, I want to create an account so that I can securely access my personal vocabulary and learning progress.
@@ -172,19 +157,24 @@ As a user, I want to create an account so that I can securely access my personal
 
 ## Week 9 - CheckPoint 3
 
+Deployed to AWS, at least one JSP that displays data from the database is implemented, authentication implemented.
+
 ## Tasks
 
-- [ ] 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [X] Set up beanStalk environment 
+- [X] Test the environment locally with data from database
+- [X] Set up Cognito and all the auth files
+- [X] Create cognito.properties file (Git Ignore)
+- [X] Create the auth controller
+- [X] Create certificates.
+- [X] Set up file structure and download the config files.
+- [X] Add the certificates to the https-instance.congif
+- [X] Add the right link in cognito and also in my cognito.properties file
+- [X] Change proxy to Apache
+- [X] Test the cognito works on Beanstalk
+- [X] Create JSP that shows the data from database
 
 ## Week 10 — Application Testing and Requirements Audit
-
 
 ## User Story US — View Saved Vocabulary
 
@@ -192,18 +182,24 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 
 ### Tasks
 
+- [ ] Create tables for Grammar cases
+- [ ] Create table for vocabulary cases
+- [ ] Create table for flash cards
+- [ ] Connect tables with foreign keys and make sure they are working
+- [ ] Starting to integrate API an
 - [ ] Open the vocabulary page locally and in AWS, if deployed.
 - [ ] Verify that vocabulary entries are retrieved from the database.
 - [ ] Check the display of German words, English meanings, articles, and plural forms.
 - [ ] Test the page when no vocabulary entries exist.
 - [ ] Verify that users cannot view another user's vocabulary.
 - [ ] Record any database or display errors.
+- [ ] Create DAOs and unit tests for my flashcards
+- [ ] Create DAOs and unit test for my german cases
 
 ## SoapUI — HTTP Testing
 
 ### Tasks
 
-- [ ] Create a collection named German Learning Tracker Tests.
 - [ ] Test the existing vocabulary page route.
 - [ ] Record response status codes and unexpected results.
 - [ ] Test an invalid route and check the error response.
@@ -213,13 +209,7 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 
 ---
 
-# Week 11 — Dictionary API Integration and Application Improvements
-
-## Goal
-
-Select and test a German dictionary API, integrate it into the Java application, and improve any critical functionality identified during Week 10 testing.
-
----
+# Week 11 — Dictionary API Integration, Application Improvements and styling
 
 ## User Story US — Search German Words Using a Dictionary API
 
@@ -230,34 +220,37 @@ As a user, I want to search for German words using a dictionary API so that I ca
 
 - [ ] Research dictionary APIs that support German vocabulary.
 - [ ] Select an API that provides useful information for the project.
-- [ ] Create JSP with form to enter words
-- [ ] Create DAO and unit tests 
+- [ ] Create JSP with form to enter words so the API can give me the information
+- [ ] Create a button to add the words to my list
+- [ ] Create DAO and unit tests for the API
 - [ ] Review its documentation, request format, response format, and usage limits.
-- [ ] Test a valid German word using Postman.
-- [ ] Test a word that is not found.
+- [ ] Test a valid German word.
 - [ ] Test missing parameters or invalid requests.
 - [ ] Identify the response fields needed by the application.
+- [ ] Start adding some CSS to my app and Boostrap 
 
 
 ## User Story US — Retrieve Articles and Plural Forms
 
-As a user, I want to retrieve German noun articles and plural forms from an external service when available so that I can save vocabulary more efficiently.
+As a user, I want to retrieve German noun articles and plural forms .
 
 ### Tasks
 
+- [ ] Add CSS and Boostrap 
 - [ ] Check whether the selected API returns noun articles and plural forms.
 - [ ] Test several German nouns.
 - [ ] Determine how to handle missing grammatical information.
 - [ ] Display the article and plural form when the API provides them.
+- [ ] Create forms to get information form the user
+- [ ] Create buttons to insert information into tables 
 - [ ] Allow users to enter missing information manually.
 - [ ] Document any limitations of the selected API.
-
 
 ---
 
 # Week 12 — Dictionary API Integration, Application Improvements and styling
 
-## User Story US — Add German Words and English Meanings
+## User Story US — Add German Words and English Meanings (German cases and )
 
 As a user, I want to add German words with their English meanings so that I can build my own vocabulary list.
 
@@ -280,18 +273,15 @@ As a user, I want to add German words with their English meanings so that I can 
 - [ ] Correct any identified authorization issues before adding more features.
 - [ ] Add or improve tests for the Java API integration.
 - [ ] Retest affected functionality after making changes.
- is difficult to integrate, prioritize a working basic dictionary lookup before adding advanced grammar information.
-
+- [ ] Make sure all connections and integrations work, forms, button, call backs, app deplying information from database, etc.. 
 
 
 ## Week 13
 
 ### Tasks
 
--[ ]
--[ ]
--[ ]
--[ ]
+-[ ] More styling and fixing last bugs
+-[ ] Complete and add all tasks that couldn't be completed in previous weeks.
 -[ ]
 -[ ]
 -[ ]
