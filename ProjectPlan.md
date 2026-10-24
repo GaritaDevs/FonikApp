@@ -193,8 +193,8 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 - [ ] Test the page when no vocabulary entries exist.
 - [ ] Verify that users cannot view another user's vocabulary.
 - [ ] Record any database or display errors.
-- [ ] Create DAOs and unit tests for my flashcards
-- [ ] Create DAOs and unit test for my german cases
+- [ ] Adding a generic DAO
+
 
 ## SoapUI — HTTP Testing
 
