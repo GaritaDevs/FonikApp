@@ -187,6 +187,7 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 - [ ] Create table for flash cards
 - [ ] Connect tables with foreign keys and make sure they are working
 - [ ] Starting to integrate API an
+- [ ] Create DAOs and unit test for other tables
 - [ ] Open the vocabulary page locally and in AWS, if deployed.
 - [ ] Verify that vocabulary entries are retrieved from the database.
 - [ ] Check the display of German words, English meanings, articles, and plural forms.
@@ -269,6 +270,9 @@ As a user, I want to add German words with their English meanings so that I can 
 ### Tasks
 
 - [ ] Fix critical registration, login, or logout problems found during testing.
+- [ ] Create getter and setters for flashCard
+- [ ] Create controller
+- [ ] Create JSP for flashCard
 - [ ] Fix the most important database or vocabulary display errors.
 - [ ] Correct any identified authorization issues before adding more features.
 - [ ] Add or improve tests for the Java API integration.
@@ -280,12 +284,12 @@ As a user, I want to add German words with their English meanings so that I can 
 
 ### Tasks
 
--[ ] More styling and fixing last bugs
--[ ] Complete and add all tasks that couldn't be completed in previous weeks.
--[ ]
--[ ]
--[ ]
--[ ]
+- [ ] More styling and fixing last bugs
+- [ ] Complete and add all tasks that couldn't be completed in previous weeks.
+- [ ] Create JSP home, and link to other options on the app
+- [ ]
+- [ ]
+- [ ]
 
 
 ## Week 14
