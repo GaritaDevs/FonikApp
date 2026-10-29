@@ -18,8 +18,6 @@ public class User {
     @Column(nullable = false, unique = true)
     private String username;
 
-    @Column(nullable = false)
-    private String password;
 
     @Column(nullable = false, unique = true)
     private String email;
@@ -46,7 +44,6 @@ public class User {
      */
     public User(String username, String password, String email) {
         this.username = username;
-        this.password = password;
         this.email = email;
     }
 
@@ -104,24 +101,6 @@ public class User {
      */
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    /**
-     * Gets password.
-     *
-     * @return password
-     */
-    public String getPassword() {
-        return password;
-    }
-
-    /**
-     * Sets password.
-     *
-     * @param password password
-     */
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     /**

@@ -24,6 +24,7 @@
     <orgJson-version>20170516</orgJson-version>
     <auth-version>3.4.1</auth-version>
     <common-io-version>2.11.0</common-io-version>
+    <jersey-version>2.29.1</jersey-version>
   </properties>
 
   <dependencies>
@@ -64,6 +65,19 @@
       <artifactId>junit-vintage-engine</artifactId>
       <version>${junit-vintage-version}</version>
       <scope>test</scope>
+    </dependency>
+
+<!--    API SOAP -->
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-client</artifactId>
+      <version>${jersey-version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.inject</groupId>
+      <artifactId>jersey-hk2</artifactId>
+      <version>${jersey-version}</version>
     </dependency>
 
     <dependency>
