@@ -54,7 +54,7 @@ public class UserDaoTest {
 
         userDao = new UserDao();
 
-        User userToAdd = new User("newuser", "password123", "newuser@gmail.com");
+        User userToAdd = new User("newuser", "newuser@gmail.com");
 
         int insertedUserId = userDao.addUser(userToAdd);
         assertNotEquals(0, insertedUserId);

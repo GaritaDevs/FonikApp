@@ -39,10 +39,9 @@ public class User {
      * Instantiates a new User.
      *
      * @param username the username
-     * @param password the password
      * @param email the email
      */
-    public User(String username, String password, String email) {
+    public User(String username, String email) {
         this.username = username;
         this.email = email;
     }
