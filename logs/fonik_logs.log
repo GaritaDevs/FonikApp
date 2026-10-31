@@ -520,3 +520,7 @@
 [DEBUG] 2026-10-29 18:08:43.783 [main] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@2fb082ff, fonik.app.entity.Vocabulary@5a4c98d7, fonik.app.entity.Vocabulary@668a32a4]
 [DEBUG] 2026-10-29 18:08:44.231 [main] VocabularyDao - Searching for vocabulary with germanWord like H
 [DEBUG] 2026-10-29 18:08:44.631 [main] VocabularyDao - Searching for vocabulary with germanWord = Haus
+[INFO ] 2026-10-29 18:09:21.122 [http-nio-8080-exec-3] VocabularyServlet - Vocabulary servlet was called
+[DEBUG] 2026-10-29 18:09:22.100 [http-nio-8080-exec-3] VocabularyDao - The list of vocabulary entries: [fonik.app.entity.Vocabulary@36601408, fonik.app.entity.Vocabulary@53d2daed, fonik.app.entity.Vocabulary@78eaf477]
+[DEBUG] 2026-10-29 18:09:22.162 [http-nio-8080-exec-3] UserDao - Retrieved 1 users
+[DEBUG] 2026-10-29 18:09:22.162 [http-nio-8080-exec-3] VocabularyServlet - Vocabulary entries found: 3

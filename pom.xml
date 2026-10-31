@@ -24,8 +24,8 @@
     <orgJson-version>20170516</orgJson-version>
     <auth-version>3.4.1</auth-version>
     <common-io-version>2.11.0</common-io-version>
-    <gson-version>2.10.1</gson-version>
     <jersey-version>2.29.1</jersey-version>
+    <jackson-version>2.10.0</jackson-version>
   </properties>
 
   <dependencies>
@@ -68,13 +68,7 @@
       <scope>test</scope>
     </dependency>
 
-<!--    API SOAP -->
-    <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>${gson-version}</version>
-    </dependency>
-
+<!--    API -->
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-client</artifactId>
@@ -85,6 +79,27 @@
       <groupId>org.glassfish.jersey.inject</groupId>
       <artifactId>jersey-hk2</artifactId>
       <version>${jersey-version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>${jackson-version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson-version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson-version}</version>
     </dependency>
 
     <dependency>
