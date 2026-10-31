@@ -58,8 +58,7 @@ public class Vocabulary {
         this.user = user;
     }
 
-    public Vocabulary(String baum, String tree, String der, String bäume, String germanWord) {
-    }
+
 
     public int getId() {
         return id;
