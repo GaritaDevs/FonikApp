@@ -3,6 +3,7 @@
 Learning German can be challenging because of the different grammatical cases, articles, and word forms. 
 Many language learning applications offer limited grammar practice or require users to pay for advanced features. 
 I developed a German Learning Tracker that allows users to save vocabulary, practice using flashcards, and review German articles and cases. 
+This app is for all users and mostly people that are beginners, ff course if you already know some German it will be also really useful.
 The goal is to make the learning process of the German language more organized, accessible, and easier to practice consistently.
 
 

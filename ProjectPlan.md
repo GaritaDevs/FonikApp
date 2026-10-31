@@ -173,6 +173,7 @@ Deployed to AWS, at least one JSP that displays data from the database is implem
 - [X] Change proxy to Apache
 - [X] Test the cognito works on Beanstalk
 - [X] Create JSP that shows the data from database
+- [ ] Remove the password field from my database and my code (Because this is managed by cognito)
 
 ## Week 10 — Application Testing and Requirements Audit
 
@@ -182,16 +183,17 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 
 ### Tasks
 
-- [ ] Create tables for Grammar cases
-- [ ] Create table for vocabulary cases
-- [ ] Create table for flash cards
-- [ ] Connect tables with foreign keys and make sure they are working
-- [ ] Starting to integrate API an
-- [ ] Create DAOs and unit test for other tables
-- [ ] Open the vocabulary page locally and in AWS, if deployed.
+
+- [ ] Research dictionary APIs that support German vocabulary.
+- - [ ] Starting to integrate API
+- [ ] Select an API that provides useful information for the project.
+- [ ] Create JSP with form to enter words so the API can give me the information
+- [ ] Add a test for each value I'm getting from the API
+- [ ] Display the object and be able to add it to my database
+- - [ ] Create DAOs and unit test for other tables
+- [ ] Create a JSP to display the object on my app
 - [ ] Verify that vocabulary entries are retrieved from the database.
 - [ ] Check the display of German words, English meanings, articles, and plural forms.
-- [ ] Test the page when no vocabulary entries exist.
 - [ ] Verify that users cannot view another user's vocabulary.
 - [ ] Record any database or display errors.
 - [ ] Adding a generic DAO
@@ -201,6 +203,7 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 
 ### Tasks
 
+- [ ] Connect tables with foreign keys and make sure they are working
 - [ ] Test the existing vocabulary page route.
 - [ ] Record response status codes and unexpected results.
 - [ ] Test an invalid route and check the error response.
@@ -219,9 +222,9 @@ As a user, I want to search for German words using a dictionary API so that I ca
 ### Tasks
 
 
-- [ ] Research dictionary APIs that support German vocabulary.
-- [ ] Select an API that provides useful information for the project.
-- [ ] Create JSP with form to enter words so the API can give me the information
+- [ ] Create tables for Grammar cases
+- [ ] Create table for vocabulary cases
+- [ ] Create table for flash cards
 - [ ] Create a button to add the words to my list
 - [ ] Create DAO and unit tests for the API
 - [ ] Review its documentation, request format, response format, and usage limits.
@@ -237,6 +240,9 @@ As a user, I want to retrieve German noun articles and plural forms .
 
 ### Tasks
 
+- [ ] Create a WiktapiService Test to test the JSON object I get from the API
+- [ ] Create Pojo Classes from my JSON
+- [ ] Testing the information that was retrieved from the API 
 - [ ] Add CSS and Boostrap 
 - [ ] Check whether the selected API returns noun articles and plural forms.
 - [ ] Test several German nouns.

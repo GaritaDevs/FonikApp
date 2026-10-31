@@ -38,10 +38,11 @@ The hard part was to put both together it took me a while to figure that out tha
 Now I am ready to work in the next task.
 
 ## Week 9
-- Date:
-- Hours
+- Date: 10/31/2023
+- Hours: 5
 
-Text: 
+Text: I fixed all the things that were mentioned on my peer review, like the typo in my screendesign.md, I removed the password field from my database and my code, I added my ERD to my screenDesigns. I also started testing the connection with my API, I'm using wiktapi this is a free German API.
+I created my POJO classes, added the dependencies, and I am currently testing the information I get from the API.
 
 ## Week 10
 - Date:

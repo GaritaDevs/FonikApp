@@ -10,7 +10,7 @@
 
 <img alt="vocabulary list" src="./wireframes/Vocabulary.png">
 
-## Sing in
+## Sign in
 
 <img alt="sign in page" src="./wireframes/signIn.png">
 
@@ -21,3 +21,7 @@
 ## Flash Card
 
 <img alt="Flash card" src="./wireframes/flashCardAnswer.png">
+
+## ERD
+
+<img alt="ERD" src="./wireframes/ERD.png">
