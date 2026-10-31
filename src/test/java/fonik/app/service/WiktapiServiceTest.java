@@ -20,7 +20,7 @@ public class WiktapiServiceTest {
 
         try {
             WebTarget target =
-                    client.target("https://api.wiktapi.dev/v1/en/word/Apfel?lang=de");
+                    client.target("https://api.wiktapi.dev/v1/en/word/Hund?lang=de");
 
             String response = target
                     .request(MediaType.APPLICATION_JSON)
@@ -29,7 +29,7 @@ public class WiktapiServiceTest {
             assertNotNull(response);
             ObjectMapper mapper = new ObjectMapper();
             Words words = mapper.readValue(response, Words.class);
-            assertNotNull("Apfel", words.getWord());
+            assertEquals("Hundd", words.getWord());
 
             //assertEquals("?????", response  );
 
