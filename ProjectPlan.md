@@ -185,12 +185,12 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 
 
 - [ ] Research dictionary APIs that support German vocabulary.
-- - [ ] Starting to integrate API
+- [ ] Starting to integrate API
 - [ ] Select an API that provides useful information for the project.
 - [ ] Create JSP with form to enter words so the API can give me the information
 - [ ] Add a test for each value I'm getting from the API
 - [ ] Display the object and be able to add it to my database
-- - [ ] Create DAOs and unit test for other tables
+- [ ] Create DAOs and unit test for API
 - [ ] Create a JSP to display the object on my app
 - [ ] Verify that vocabulary entries are retrieved from the database.
 - [ ] Check the display of German words, English meanings, articles, and plural forms.

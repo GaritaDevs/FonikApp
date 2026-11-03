@@ -25,11 +25,11 @@
       </jdbc-additional-properties>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="AWS" uuid="bc99635d-e879-43ac-8e77-d498e2deb1a2">
+    <data-source source="LOCAL" name="AWS" uuid="9a4cc7af-0830-458f-9fd7-8799d8587235">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://awseb-e-a2pwutymbu-stack-awsebrdsdatabase-1m0urukgyckb.crouk2ayuvx5.us-east-2.rds.amazonaws.com:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://awseb-e-civz98ez46-stack-awsebrdsdatabase-dieagzw3s3nx.crouk2ayuvx5.us-east-2.rds.amazonaws.com:3306</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.host.port" />
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />

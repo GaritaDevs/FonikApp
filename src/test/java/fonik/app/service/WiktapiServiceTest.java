@@ -29,7 +29,7 @@ public class WiktapiServiceTest {
             assertNotNull(response);
             ObjectMapper mapper = new ObjectMapper();
             Words words = mapper.readValue(response, Words.class);
-            assertEquals("Hundd", words.getWord());
+            assertEquals("Hund", words.getWord());
 
             //assertEquals("?????", response  );
 

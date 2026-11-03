@@ -23,13 +23,12 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`),
-  UNIQUE KEY `email` (`email`)
+                         `id` int NOT NULL AUTO_INCREMENT,
+                         `username` varchar(50) NOT NULL,
+                         `email` varchar(100) NOT NULL,
+                         PRIMARY KEY (`id`),
+                         UNIQUE KEY `username` (`username`),
+                         UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -39,7 +38,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'testuser','test123','test@example.com');
+INSERT INTO `users` VALUES (1,'testuser','test@example.com');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,15 +50,15 @@ DROP TABLE IF EXISTS `vocabulary`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `vocabulary` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `german_word` varchar(100) NOT NULL,
-  `english_meaning` varchar(255) NOT NULL,
-  `article` varchar(10) DEFAULT NULL,
-  `plural` varchar(100) DEFAULT NULL,
-  `user_id` int NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_vocabulary_user` (`user_id`),
-  CONSTRAINT `fk_vocabulary_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+                              `id` int NOT NULL AUTO_INCREMENT,
+                              `german_word` varchar(100) NOT NULL,
+                              `english_meaning` varchar(255) NOT NULL,
+                              `article` varchar(10) DEFAULT NULL,
+                              `plural` varchar(100) DEFAULT NULL,
+                              `user_id` int NOT NULL,
+                              PRIMARY KEY (`id`),
+                              KEY `fk_vocabulary_user` (`user_id`),
+                              CONSTRAINT `fk_vocabulary_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
