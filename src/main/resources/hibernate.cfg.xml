@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://awseb-e-civz98ez46-stack-awsebrdsdatabase-dieagzw3s3nx.crouk2ayuvx5.us-east-2.rds.amazonaws.com:3306/german_tracker</property>
+        <property name="connection.url">jdbc:mysql://awseb-e-ea8nvtkmzm-stack-awsebrdsdatabase-uyizanegidwb.cnq0ok4wck4n.us-east-2.rds.amazonaws.com:3306/german_tracker</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
         <property name="connection.username">root</property>
