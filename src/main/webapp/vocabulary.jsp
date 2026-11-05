@@ -6,37 +6,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>German Vocabulary</title>
+    <title>My Vocabulary</title>
 </head>
 
 <body>
 
-
 <h1>German Learning Tracker</h1>
 
-<h2>User Information</h2>
-
-<c:forEach var="user" items="${users}">
-    <p>User ID: ${user.id}</p>
-    <p>Username: ${user.username}</p>
-    <hr>
-</c:forEach>
-
-
 <h2>My Vocabulary</h2>
-
-<p>Vocabulary list: ${vocabularyList}</p>
 
 <p>
     Number of words:
     <strong>${not empty vocabularyList ? vocabularyList.size() : 0}</strong>
 </p>
 
+<br>
+
+<a href="addVocabulary.jsp">Add New Vocabulary</a>
+
+<br><br>
+
 <table border="1">
 
     <thead>
     <tr>
-        <th>Owner</th>
         <th>German Word</th>
         <th>English Meaning</th>
         <th>Article</th>
@@ -46,11 +39,9 @@
 
     <tbody>
 
-
     <c:forEach var="vocabulary" items="${vocabularyList}">
 
         <tr>
-            <td>${vocabulary.user.username}</td>
             <td>${vocabulary.germanWord}</td>
             <td>${vocabulary.englishMeaning}</td>
             <td>${vocabulary.article}</td>
@@ -68,5 +59,4 @@
 <a href="index.jsp">Back to Home</a>
 
 </body>
-
 </html>

@@ -1,5 +1,6 @@
 package fonik.app.persistence;
 
+import fonik.app.entity.User;
 import fonik.app.entity.Vocabulary;
 import fonik.app.util.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -119,6 +120,29 @@ public class VocabularyDaoTest {
         vocabularyDao = new VocabularyDao();
         List<Vocabulary> vocabulary = vocabularyDao.getAll();
         assertEquals(3, vocabulary.size());
+    }
+
+    @Test
+    public void testGetByUserId() {
+
+        VocabularyDao vocabularyDao = new VocabularyDao();
+
+        // Get a user that already exists in the database
+        UserDao userDao = new UserDao();
+        List<User> users = userDao.getAll();
+
+        assertTrue(users.size() > 0);
+
+        int userId = users.get(0).getId();
+
+        // Retrieve vocabulary belonging to that user
+        List<Vocabulary> vocabularyList =
+                vocabularyDao.getByUserId(userId);
+
+        // Verify that every entry belongs to the requested user
+        for (Vocabulary vocabulary : vocabularyList) {
+            assertEquals(userId, vocabulary.getUser().getId());
+        }
     }
 
     /**

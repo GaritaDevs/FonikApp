@@ -173,7 +173,7 @@ Deployed to AWS, at least one JSP that displays data from the database is implem
 - [X] Change proxy to Apache
 - [X] Test the cognito works on Beanstalk
 - [X] Create JSP that shows the data from database
-- [ ] Remove the password field from my database and my code (Because this is managed by cognito)
+- [X] Remove the password field from my database and my code (Because this is managed by cognito)
 
 ## Week 10 — Application Testing and Requirements Audit
 
@@ -184,11 +184,17 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 ### Tasks
 
 
-- [ ] Research dictionary APIs that support German vocabulary.
-- [ ] Starting to integrate API
-- [ ] Select an API that provides useful information for the project.
+- [X] Research dictionary APIs that support German vocabulary.
+- [X] Starting to integrate API
+- [X] Select an API that provides useful information for the project.
+- [X] Download Plugging POJO
+- [X] Create POJOS
+- [X] Add a test for each value I'm getting from the API
+- [X] Create WiktapiService to return the words object
+- [X] Create TEST to make sure we are getting the correct values
 - [ ] Create JSP with form to enter words so the API can give me the information
-- [ ] Add a test for each value I'm getting from the API
+- [ ] Connect JSP with Servlet
+- [ ] Connect DAO to my vocabulary servlet
 - [ ] Display the object and be able to add it to my database
 - [ ] Create DAOs and unit test for API
 - [ ] Create a JSP to display the object on my app

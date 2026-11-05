@@ -2,6 +2,7 @@
 <body>
 <h2>Testing Tomcat</h2>
 <a href="vocabulary">Vocabulary</a>
+<a href="addVocabulary.jsp">Add Vocabulary</a>
 
 <c:choose>
     <c:when test="${empty userName}">

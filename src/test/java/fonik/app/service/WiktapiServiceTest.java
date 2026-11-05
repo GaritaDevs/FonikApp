@@ -1,41 +1,35 @@
-
 package fonik.app.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
-
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
-
+import fonik.app.entity.Vocabulary;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class WiktapiServiceTest {
 
     @Test
-    public void testWiktapiJSON() throws Exception {
+    public void testGetWord() throws Exception {
 
-        Client client = ClientBuilder.newClient();
+        WiktapiService service = new WiktapiService();
 
-        try {
-            WebTarget target =
-                    client.target("https://api.wiktapi.dev/v1/en/word/Hund?lang=de");
+        Words words = service.getWord("Hund");
 
-            String response = target
-                    .request(MediaType.APPLICATION_JSON)
-                    .get(String.class);
+        assertNotNull(words);
+        assertEquals("Hund", words.getWord());
+        assertNotNull(words.getEntries());
+        assertFalse(words.getEntries().isEmpty());
+    }
 
-            assertNotNull(response);
-            ObjectMapper mapper = new ObjectMapper();
-            Words words = mapper.readValue(response, Words.class);
-            assertEquals("Hund", words.getWord());
+    @Test
+    public void testGetVocabulary() throws Exception {
 
-            //assertEquals("?????", response  );
+        WiktapiService service = new WiktapiService();
 
+        Vocabulary vocabulary = service.getVocabulary("Hund");
 
-        } finally {
-            client.close();
-        }
+        assertNotNull(vocabulary);
+        assertEquals("Hund", vocabulary.getGermanWord());
+        assertEquals("dog, hound", vocabulary.getEnglishMeaning());
+        assertEquals("der", vocabulary.getArticle());
+        assertEquals("Hunde", vocabulary.getPlural());
     }
 }

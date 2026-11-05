@@ -38,22 +38,27 @@ public class VocabularyServlet extends HttpServlet {
             HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
+
         logger.info("Vocabulary servlet was called");
 
-        List<Vocabulary> vocabularyList = vocabularyDao.getAll();
+        // Get the logged-in user's email from the session
+        String email = (String) request.getSession().getAttribute("userName");
 
-        List<User> users = userDao.getAll();
-        request.setAttribute("users", users);
+        // Find the user in the database
+        User loggedInUser = userDao.getByEmail(email);
+
+        // Get only this user's vocabulary
+        List<Vocabulary> vocabularyList =
+                vocabularyDao.getByUserId(loggedInUser.getId());
 
         logger.debug("Vocabulary entries found: {}", vocabularyList.size());
 
-
         request.setAttribute("vocabularyList", vocabularyList);
-
 
         RequestDispatcher dispatcher =
                 request.getRequestDispatcher("/vocabulary.jsp");
 
         dispatcher.forward(request, response);
     }
+
 }
