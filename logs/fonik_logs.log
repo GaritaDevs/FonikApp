@@ -1796,3 +1796,4 @@ java.sql.SQLException: Access denied for user 'student'@'localhost' (using passw
 [DEBUG] 2026-11-06 21:47:13.712 [main] VocabularyDao - Inserted entity with ID: 7
 [DEBUG] 2026-11-06 21:47:54.158 [main] UserDao - Inserted entity with ID: 2
 [DEBUG] 2026-11-06 21:47:56.072 [main] VocabularyDao - Inserted entity with ID: 7
+[INFO ] 2026-11-06 21:48:19.108 [http-nio-8080-exec-3] VocabularyServlet - Vocabulary servlet was called

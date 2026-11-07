@@ -47,3 +47,5 @@ build/
 ## ignore cognito
 src/main/resources/cognito.properties
 cognito.properties
+
+src/main/resources/hibernate.cfg.xml
