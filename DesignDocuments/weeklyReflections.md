@@ -39,16 +39,19 @@ Now I am ready to work in the next task.
 
 ## Week 9
 - Date: 10/31/2023
-- Hours: 5
+- Hours: 7
 
 Text: I fixed all the things that were mentioned on my peer review, like the typo in my screendesign.md, I removed the password field from my database and my code, I added my ERD to my screenDesigns. I also started testing the connection with my API, I'm using wiktapi this is a free German API.
 I created my POJO classes, added the dependencies, and I am currently testing the information I get from the API.
 
 ## Week 10
-- Date:
-- Hours
+- Date: 11/06/2026
+- Hours: 9
 
-Text: 
+Text: This week was a lot. I've been super busy with other classes and work, but I still had some time to make some changes.
+I added functionalities to show only the vocabulary from the user the logged in, I created a GenericDao and I kept my UserDao and my VocabularyDao and those extend to my 
+GenericDao and I added a specific method to get the vocabulary for the user. I also create the JSP with the forms where the user is gonna get the info from the API and I also 
+he will have the option to enter the information manually. I finally fixed my project plan and added all the things I think I need to complete my project
 
 
 ## Week 11

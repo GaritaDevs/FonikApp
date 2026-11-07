@@ -183,7 +183,7 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 
 ### Tasks
 
-
+- [X] Create a WiktapiService Test to test the JSON object I get from the API
 - [X] Research dictionary APIs that support German vocabulary.
 - [X] Starting to integrate API
 - [X] Select an API that provides useful information for the project.
@@ -192,18 +192,10 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 - [X] Add a test for each value I'm getting from the API
 - [X] Create WiktapiService to return the words object
 - [X] Create TEST to make sure we are getting the correct values
-- [ ] Create JSP with form to enter words so the API can give me the information
-- [ ] Connect JSP with Servlet
-- [ ] Connect DAO to my vocabulary servlet
-- [ ] Display the object and be able to add it to my database
-- [ ] Create DAOs and unit test for API
-- [ ] Create a JSP to display the object on my app
-- [ ] Verify that vocabulary entries are retrieved from the database.
-- [ ] Check the display of German words, English meanings, articles, and plural forms.
-- [ ] Verify that users cannot view another user's vocabulary.
-- [ ] Record any database or display errors.
-- [ ] Adding a generic DAO
-
+- [X] Check whether the selected API returns noun articles and plural forms.
+- [X] Create JSP with form to enter words so the API can give me the information
+- [X] Test several German nouns.
+- [X] Adding a generic DAO
 
 ## SoapUI — HTTP Testing
 
@@ -213,8 +205,6 @@ As a user, I want to view my saved vocabulary so that I can review the words I h
 - [ ] Test the existing vocabulary page route.
 - [ ] Record response status codes and unexpected results.
 - [ ] Test an invalid route and check the error response.
-- [ ] Determine whether the application currently exposes REST endpoints or only JSP pages and Servlets.
-- [ ] If REST endpoints already exist, test the available requests.
 - [ ] Save screenshots or test notes as evidence.
 
 ---
@@ -227,17 +217,13 @@ As a user, I want to search for German words using a dictionary API so that I ca
 
 ### Tasks
 
-
-- [ ] Create tables for Grammar cases
-- [ ] Create table for vocabulary cases
-- [ ] Create table for flash cards
-- [ ] Create a button to add the words to my list
-- [ ] Create DAO and unit tests for the API
-- [ ] Review its documentation, request format, response format, and usage limits.
-- [ ] Test a valid German word.
-- [ ] Test missing parameters or invalid requests.
-- [ ] Identify the response fields needed by the application.
-- [ ] Start adding some CSS to my app and Boostrap 
+- [ ] Connect DAO to my vocabulary servlet
+- [ ] Display the object and be able to add it to my database
+- [ ] Create DAOs and unit test for API
+- [ ] Verify that vocabulary entries are retrieved from the API.
+- [ ] Check the display of German words, English meanings, articles, and plural forms.
+- [ ] Verify that users cannot view another user's vocabulary.
+- [ ] Record any database or display errors.
 
 
 ## User Story US — Retrieve Articles and Plural Forms
@@ -246,18 +232,17 @@ As a user, I want to retrieve German noun articles and plural forms .
 
 ### Tasks
 
-- [ ] Create a WiktapiService Test to test the JSON object I get from the API
-- [ ] Create Pojo Classes from my JSON
+
 - [ ] Testing the information that was retrieved from the API 
-- [ ] Add CSS and Boostrap 
-- [ ] Check whether the selected API returns noun articles and plural forms.
-- [ ] Test several German nouns.
+- [ ] Add some CSS and Boostrap for my home jsp
+- [ ] Add some CSS and Boostrap for my vocabulary jsp
 - [ ] Determine how to handle missing grammatical information.
-- [ ] Display the article and plural form when the API provides them.
-- [ ] Create forms to get information form the user
-- [ ] Create buttons to insert information into tables 
-- [ ] Allow users to enter missing information manually.
-- [ ] Document any limitations of the selected API.
+- [ ] Create Servlet for my addUser 
+- [ ] Create buttons to insert information I get from the API into tables 
+- [ ] Allow users to enter information manually or from the API.
+- [ ] Add button to send that information to the Database
+- [ ] Test saving a word returned by the API.
+
 
 ---
 
@@ -269,45 +254,49 @@ As a user, I want to add German words with their English meanings so that I can 
 
 ### Tasks
 
-- [ ] Review the existing vocabulary form.
-- [ ] Allow users to search for a word before entering it manually.
-- [ ] Populate available form fields with dictionary results.
-- [ ] Allow users to review and correct the returned information.
-- [ ] Save the vocabulary entry using VocabularyDao.
-- [ ] Verify that the entry is associated with the correct user.
-- [ ] Test saving a word returned by the API.
+- [ ] Review the existing vocabulary and add functions to delete or update information.
+- [ ] Make sure the user enters the right data in the forms.
+- [ ] Add some CSS and Boostrap to my app
+
 
 ## Week 13 - Flash Cards and more styling
 
 ### Tasks
 
+
+- [ ] Create a JSP for my flash Cards
 - [ ] Fix critical registration, login, or logout problems found during testing.
-- [ ] Create getter and setters for flashCard
-- [ ] Create controller
-- [ ] Create JSP for flashCard
 - [ ] Fix the most important database or vocabulary display errors.
-- [ ] Correct any identified authorization issues before adding more features.
-- [ ] Add or improve tests for the Java API integration.
-- [ ] Retest affected functionality after making changes.
-- [ ] Make sure all connections and integrations work, forms, button, call backs, app deplying information from database, etc.. 
+- [ ] Create table for flash cards
+- [ ] Create servlet 
+- [ ] Create getter and setters for my flash cards
+- [ ] Create any specific method for DAO if needed (I don't know yet)
 
-
-## Week 13
+## Week 14
 
 ### Tasks
 
 - [ ] More styling and fixing last bugs
 - [ ] Complete and add all tasks that couldn't be completed in previous weeks.
 - [ ] Create JSP home, and link to other options on the app
-- [ ]
-- [ ]
-- [ ]
+- [ ] Integrate an option to create a flash card from the API
+- [ ] Create JSP to handle errors
 
 
-## Week 14
+## Week 15
 
 ## Tasks
 
+- [ ] Fix bugs
+- [ ] Fix last details for my UI
 - [ ] Create project presentation 
+- [ ] If I have time Create tables for Grammar cases
+- [ ] If I have timeCreate table for vocabulary cases
+- [ ] If I have time Create table for flash cards
 
 
+## Week 16
+
+## Tasks
+
+- [ ] Presentation
