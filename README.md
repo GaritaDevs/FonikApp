@@ -13,8 +13,8 @@ The goal is to make the learning process of the German language more organized, 
 - ORM Framework : Hibernate Version 5.6.15.Final
 - Dependency Management : Maven
 - Web Services consumed using Java : TBD
-- CSS : Bootstrap 
-- Data Validation : Bootstrap Validator for front end 
+- CSS : CSS
+- Data Validation : HTML validation
 - Logging : Log4J2
 - Hosting : AWS
 - Unit Testing : JUnit tests to cover all testable logic

@@ -64,8 +64,8 @@ my database yet, I'll keep working on it. I gitignore my hibernate file
 
 
 ## Week 12
-- Date:
-- Hours
+- Date: 11/12/26
+- Hours: 10
 
 Text: 
 

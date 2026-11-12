@@ -56,7 +56,7 @@
 
 <br>
 
-<a href="index.jsp">Back to Home</a>
+<a href="login.jsp">Back to Home</a>
 
 </body>
 </html>
