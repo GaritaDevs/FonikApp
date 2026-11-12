@@ -55,10 +55,12 @@ he will have the option to enter the information manually. I finally fixed my pr
 
 
 ## Week 11
-- Date:
-- Hours
+- Date: 11/07/2026 - 
+- Hours: 10
 
-Text: 
+Text: I created the addVocabulary servlet, added a form from the data that was retrieved from my API in case I want to modify the data 
+because for one word I can get multiple meanings, But I'm getting the information I need from the API but I can't save it to
+my database yet, I'll keep working on it. I gitignore my hibernate file
 
 
 ## Week 12

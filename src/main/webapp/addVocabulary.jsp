@@ -21,7 +21,9 @@
 
 <p>Enter a German word to retrieve its meaning, article, and plural automatically.</p>
 
-<form action="searchVocabulary" method="get">
+<form action="${pageContext.request.contextPath}/addVocabulary" method="post">
+
+  <input type="hidden" name="action" value="lookup">
 
   <label for="searchWord">German Word:</label>
 
@@ -35,7 +37,9 @@
 
 </form>
 
-
+<c:if test="${not empty errorMessage}">
+  <p>${errorMessage}</p>
+</c:if>
 <!-- DISPLAY API RESULTS -->
 
 <c:if test="${not empty suggestedVocabulary}">
@@ -46,7 +50,9 @@
 
   <p>Review the information before adding it to your vocabulary.</p>
 
-  <form action="addVocabulary" method="post">
+  <form action="${pageContext.request.contextPath}/addVocabulary" method="post">
+
+    <input type="hidden" name="action" value="save">
 
     <label for="apiWord">German Word:</label>
 
