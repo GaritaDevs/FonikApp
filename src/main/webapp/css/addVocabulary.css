@@ -1,0 +1,205 @@
+
+/* Add Vocabulary Main Container */
+
+.add-vocabulary-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* Page Header */
+
+.add-vocabulary-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.add-vocabulary-header h1 {
+    font-size: 38px;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.add-vocabulary-header p {
+    color: #9ca3af;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Vocabulary Sections */
+
+.add-vocabulary-section {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    padding: 35px;
+    margin-bottom: 30px;
+    transition: border-color 0.3s;
+}
+
+.add-vocabulary-section:hover {
+    border-color: #f97316;
+}
+
+/* Section Heading */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.section-icon {
+    font-size: 25px;
+}
+
+.add-vocabulary-section > p {
+    color: #9ca3af;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Forms */
+
+.add-vocabulary-section form {
+    margin-top: 20px;
+}
+
+.add-vocabulary-section label {
+    display: block;
+    color: #d1d5db;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.add-vocabulary-section input,
+.add-vocabulary-section select {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 22px;
+    background-color: #111827;
+    border: 1px solid #374151;
+    border-radius: 7px;
+    color: #f9fafb;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.add-vocabulary-section input::placeholder {
+    color: #6b7280;
+}
+
+.add-vocabulary-section input:focus,
+.add-vocabulary-section select:focus {
+    outline: none;
+    border-color: #f97316;
+}
+
+/* Buttons */
+
+.add-button {
+    display: inline-block;
+    background-color: #f97316;
+    color: #ffffff;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-button:hover {
+    background-color: #ea580c;
+    transform: translateY(-2px);
+}
+
+/* Dictionary Results */
+
+.dictionary-results {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: #111827;
+    border: 1px solid #374151;
+    border-radius: 10px;
+}
+
+.dictionary-results h3 {
+    color: #f97316;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.dictionary-results > p {
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Error Message */
+
+.error-message {
+    color: #f87171;
+    background-color: #351d26;
+    border: 1px solid #7f1d1d;
+    border-radius: 7px;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+/* Footer Navigation */
+
+.add-vocabulary-footer {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.add-vocabulary-footer a {
+    display: inline-block;
+    color: #f97316;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.add-vocabulary-footer a:hover {
+    color: #ea580c;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .add-vocabulary-container {
+        width: 90%;
+        padding: 40px 0;
+    }
+
+    .add-vocabulary-header h1 {
+        font-size: 30px;
+    }
+
+    .add-vocabulary-section {
+        padding: 22px;
+    }
+
+    .section-heading h2 {
+        font-size: 19px;
+    }
+
+    .add-button {
+        width: 100%;
+    }
+}

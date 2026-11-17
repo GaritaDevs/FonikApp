@@ -92,7 +92,7 @@ public class AddVocabularyServlet extends HttpServlet {
         }
 
         // ACTION 2: Save vocabulary for the logged-in user
-        else if ("save".equals(action)) {
+        else if ("save".equals(action) || "saveManual".equals(action)) {
 
             HttpSession session = request.getSession(false);
 

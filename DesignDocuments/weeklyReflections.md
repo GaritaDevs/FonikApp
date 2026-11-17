@@ -67,14 +67,17 @@ my database yet, I'll keep working on it. I gitignore my hibernate file
 - Date: 11/12/26
 - Hours: 10
 
-Text: 
+Text: I created a JSP that will be the home page before the user log in, I made all the CSS file for all my JSPs
+The form is working, it's retrieving the words from the API and adding words to my DataBase. The form that adds the words manually
+is not working yet. And my delete and update are still in progress. 
+
 
 
 ## Week 13
-- Date:
-- Hours
+- Date: 11/17/26
+- Hours: 
 
-Text: 
+Text: I added the functionality to add the words manually to my DataBase. 
 
 
 ## Week 14

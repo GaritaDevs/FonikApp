@@ -51,7 +51,7 @@
             <c:otherwise>
                 <a class="main-button"
                    href="${pageContext.request.contextPath}/logIn">
-                    Go to My Learning Space
+                    Dashboard
                 </a>
             </c:otherwise>
         </c:choose>
