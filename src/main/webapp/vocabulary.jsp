@@ -67,9 +67,7 @@
     </section>
 
 
-
     <section class="vocabulary-table-section">
-
         <h2>Your Saved Words</h2>
 
         <c:choose>
@@ -112,17 +110,25 @@
                                 <td>
                                     <div class="action-buttons">
 
-                                        <a href="#"
-                                           class="edit-button"
-                                           title="Edit word">
-                                            &#9998;
-                                        </a>
+                                        <form action="${pageContext.request.contextPath}/vocabulary" method="get">
+                                            <input type="hidden" name="action" value="edit">
+                                            <input type="hidden" name="id" value="${vocabulary.id}">
 
-                                        <a href="#"
-                                           class="delete-button"
-                                           title="Delete word">
-                                            &#128465;
-                                        </a>
+                                            <button type="submit" class="edit-button" title="Edit word">
+                                                &#9998;
+                                            </button>
+                                        </form>
+
+                                        <form action="${pageContext.request.contextPath}/vocabulary" method="post"
+                                              onsubmit="return confirm('Are you sure you want to delete this word?');">
+
+                                            <input type="hidden" name="action" value="delete">
+                                            <input type="hidden" name="id" value="${vocabulary.id}">
+
+                                            <button type="submit" class="delete-button" title="Delete word">
+                                                &#128465;
+                                            </button>
+                                        </form>
 
                                     </div>
                                 </td>

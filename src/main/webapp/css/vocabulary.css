@@ -109,6 +109,17 @@
 }
 
 /* Edit and Delete Icons */
+.action-buttons form {
+    display: inline;
+}
+
+.action-buttons button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 .action-buttons {
     display: flex;
     align-items: center;
